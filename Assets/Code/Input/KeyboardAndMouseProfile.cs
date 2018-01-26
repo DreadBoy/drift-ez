@@ -29,93 +29,48 @@ public class KeyboardAndMouseProfile : UnityInputDeviceProfile {
         {
                 new InputControlMapping
                 {
-                    Handle = "Fire - Mouse",
+                    Handle = "Action1",
                     Target = InputControlType.Action1,
-                    Source = MouseButton0
+                    Source = KeyCodeButton(KeyCode.Alpha1)
                 },
+
                 new InputControlMapping
                 {
-                    Handle = "Fire - Keyboard",
-                    Target = InputControlType.Action1,
-					// KeyCodeButton fires when any of the provided KeyCode params are down.
-					Source = KeyCodeButton( KeyCode.F, KeyCode.Return )
-                },
-                new InputControlMapping
-                {
-                    Handle = "AltFire",
+                    Handle = "Action2",
                     Target = InputControlType.Action2,
-                    Source = MouseButton2
+                Source = KeyCodeButton(KeyCode.Alpha2)
                 },
+
                 new InputControlMapping
                 {
-                    Handle = "Middle",
+                    Handle = "Action3",
                     Target = InputControlType.Action3,
-                    Source = MouseButton1
+                    Source = KeyCodeButton(KeyCode.Alpha3)
                 },
+
                 new InputControlMapping
                 {
-                    Handle = "Jump",
+                    Handle = "Action4",
                     Target = InputControlType.Action4,
-                    Source = KeyCodeButton( KeyCode.Space )
-                },
-                new InputControlMapping
-                {
-                    Handle = "Combo",
-                    Target = InputControlType.LeftBumper,
-					// KeyCodeComboButton requires that all KeyCode params are down simultaneously.
-					Source = KeyCodeComboButton( KeyCode.LeftAlt, KeyCode.Alpha1 )
-                },
+                    Source = KeyCodeButton(KeyCode.Alpha4)
+                }
             };
 
         AnalogMappings = new[]
         {
                 new InputControlMapping
                 {
-                    Handle = "Move X",
+                    Handle = "Steer",
                     Target = InputControlType.LeftStickX,
 					// KeyCodeAxis splits the two KeyCodes over an axis. The first is negative, the second positive.
 					Source = KeyCodeAxis( KeyCode.A, KeyCode.D )
                 },
+
                 new InputControlMapping
                 {
-                    Handle = "Move Y",
-                    Target = InputControlType.LeftStickY,
-					// Notes that up is positive in Unity, therefore the order of KeyCodes is down, up.
-					Source = KeyCodeAxis( KeyCode.S, KeyCode.W )
-                },
-                new InputControlMapping {
-                    Handle = "Move X Alternate",
-                    Target = InputControlType.LeftStickX,
-                    Source = KeyCodeAxis( KeyCode.LeftArrow, KeyCode.RightArrow )
-                },
-                new InputControlMapping {
-                    Handle = "Move Y Alternate",
-                    Target = InputControlType.LeftStickY,
-                    Source = KeyCodeAxis( KeyCode.DownArrow, KeyCode.UpArrow )
-                },
-                new InputControlMapping
-                {
-                    Handle = "Look X",
-                    Target = InputControlType.RightStickX,
-                    Source = MouseXAxis,
-                    Raw    = true,
-                    Scale  = 0.1f
-                },
-                new InputControlMapping
-                {
-                    Handle = "Look Y",
+                    Handle = "Throttle/Brake",
                     Target = InputControlType.RightStickY,
-                    Source = MouseYAxis,
-                    Raw    = true,
-                    Scale  = 0.1f
-                },
-                new InputControlMapping
-                {
-                    Handle = "Look Z",
-                    Target = InputControlType.ScrollWheel,
-                    Source = MouseScrollWheel,
-                    Raw    = true,
-                    Scale  = 0.1f
+                    Source = KeyCodeAxis(KeyCode.S, KeyCode.W )
                 }
             };
     }
