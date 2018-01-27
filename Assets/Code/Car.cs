@@ -5,7 +5,7 @@
 public class Car : MonoBehaviour {
 
     public new Camera camera;
-    Controller controller;
+    public Controller controller;
     AudioSource audioSource;
 
     [SerializeField]
@@ -37,13 +37,10 @@ public class Car : MonoBehaviour {
         }
         transform.Translate(speed * 5 * transform.forward * Time.deltaTime, Space.World);
 
-        if (controller.GetThrottle() > 0 && audioSource.clip != running)
-        {
+        if (controller.GetThrottle() > 0 && audioSource.clip != running) {
             audioSource.clip = running;
             audioSource.Play();
-        }
-        else if (controller.GetThrottle() == 0 && audioSource.clip != idle)
-        {
+        } else if (controller.GetThrottle() == 0 && audioSource.clip != idle) {
             audioSource.clip = idle;
             audioSource.Play();
         }

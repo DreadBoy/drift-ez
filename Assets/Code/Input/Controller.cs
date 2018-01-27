@@ -3,42 +3,47 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour {
 
-    InputDevice controller;
+    InputDevice inputDevice;
+    InputDevice keyboard;
 
-    void Start() {
-        //TODO: dont get on start
-        controller = InputManager.ActiveDevice;
+    void Awake() {
+        inputDevice = InputManager.ActiveDevice;
+
     }
 
-    public void SetController(InputDevice controller) {
-        this.controller = controller;
+    public void SetInputDevice(InputDevice inputDevice) {
+        this.inputDevice = inputDevice;
+    }
+
+    public InputDevice GetInputDevice() {
+        return inputDevice;
     }
 
     public float GetSteering() {
-        return controller.GetControl(InputControlType.LeftStickX).Value;
+        return inputDevice.GetControl(InputControlType.LeftStickX).Value;
     }
 
     public float GetThrottle() {
-        return Mathf.Max(controller.GetControl(InputControlType.RightStickY).Value, 0.0f);
+        return Mathf.Max(inputDevice.GetControl(InputControlType.RightStickY).Value, 0.0f);
     }
 
     public float GetBrake() {
-        return -Mathf.Min(controller.GetControl(InputControlType.RightStickY).Value, 0.0f);
+        return -Mathf.Min(inputDevice.GetControl(InputControlType.RightStickY).Value, 0.0f);
     }
 
     public bool GetShiftUp() {
-        return controller.GetControl(InputControlType.DPadUp).WasPressed;
+        return inputDevice.GetControl(InputControlType.DPadUp).WasPressed;
     }
 
     public bool GetShiftDown() {
-        return controller.GetControl(InputControlType.DPadDown).WasPressed;
+        return inputDevice.GetControl(InputControlType.DPadDown).WasPressed;
     }
 
     public bool IsClutchPressed() {
-        return controller.GetControl(InputControlType.Action2).IsPressed;
+        return inputDevice.GetControl(InputControlType.Action2).IsPressed;
     }
 
     public bool IsHandBrakePressed() {
-        return controller.GetControl(InputControlType.Action3).IsPressed;
+        return inputDevice.GetControl(InputControlType.Action3).IsPressed;
     }
 }

@@ -1,26 +1,30 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-public class SceneSetup : MonoBehaviour
-{
+public class SceneSetup : MonoBehaviour {
     public Car carPrefab;
     public AudioClip musicLoop;
 
-    void Start()
-    {
+    void Start() {
+
         CarPlaceholder[] placeholders = FindObjectsOfType<CarPlaceholder>();
-        if(placeholders.Length != 2)
-        {
+        if (placeholders.Length != 2) {
             Debug.LogError("You need to place 2 car placeholders in scene!");
             return;
         }
-        for (int i = 0; i < placeholders.Length; i++)
-        {
+
+        ControllerManager controllerManager = FindObjectOfType<ControllerManager>();
+
+        for (int i = 0; i < placeholders.Length; i++) {
             Car car = Instantiate(carPrefab);
             car.transform.position = placeholders[i].transform.position;
             car.transform.rotation = placeholders[i].transform.rotation;
             car.camera.rect = new Rect(i * 1f / placeholders.Length, 0, 1f / placeholders.Length, 1);
+            if (controllerManager != null) {
+                car.controller.SetInputDevice(controllerManager.GetInputDeviceForPlayer(i));
+            }
         };
+
         foreach (var placeholder in placeholders)
             Destroy(placeholder.gameObject);
 
@@ -32,8 +36,7 @@ public class SceneSetup : MonoBehaviour
     }
 
     [MenuItem("GameObject/Create Other/Scene Setup", false, 10)]
-    static void Create()
-    {
+    static void Create() {
         new GameObject().AddComponent<SceneSetup>().name = "Scene setup";
     }
 }

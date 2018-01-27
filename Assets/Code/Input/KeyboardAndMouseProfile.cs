@@ -10,7 +10,7 @@ using InControl;
 // 
 public class KeyboardAndMouseProfile : UnityInputDeviceProfile {
     public KeyboardAndMouseProfile() {
-        Name = "Keyboard/Mouse";
+        Name = "Keyboard";
         Meta = "A keyboard and mouse combination profile appropriate for FPS.";
 
         // This profile only works on desktops.
