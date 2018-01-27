@@ -26,7 +26,7 @@ public class SceneSetup : MonoBehaviour {
             Car car = Instantiate(carPrefab);
             car.transform.position = placeholders[i].transform.position;
             car.transform.rotation = placeholders[i].transform.rotation;
-            car.camera.rect = new Rect(i * 1f / placeholders.Length, 0, 1f / placeholders.Length, 1);
+            car.GetComponent<Camera>().rect = new Rect(i * 1f / placeholders.Length, 0, 1f / placeholders.Length, 1);
             if (controllerManager != null) {
                 car.controller.SetInputDevice(controllerManager.GetInputDeviceForPlayer(i));
                 car.controller.SetPlayer(i == 0);

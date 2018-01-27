@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.PostProcessing;
 
 [RequireComponent(typeof(Controller))]
 [RequireComponent(typeof(AudioSource))]
 public class Car : MonoBehaviour
 {
 
-    public new Camera camera;
     public Transform model;
     [HideInInspector]
     public Controller controller;
     AudioSource audioSource;
-    public PostProcessingProfile postProcessingProfile;
 
     [SerializeField]
     AudioClip idle = null, running = null;
@@ -28,9 +25,10 @@ public class Car : MonoBehaviour
 
     [HideInInspector]
     public int playerIndex = 0;
+    [HideInInspector]
+    public bool isDrifting;
 
     float targetSpeed;
-    bool isDrifting;
     IEnumerator driftingCamera;
 
     private void Awake()
@@ -53,16 +51,33 @@ public class Car : MonoBehaviour
             float sign = speed / Mathf.Abs(speed);
             transform.Rotate(0, sign * direction.y * Time.deltaTime, 0);
         }
-        if (isDrifting)
-            camera.GetComponent<ShaderEffect_BleedingColors>().shift = -controller.GetSteering();
-        else
-            camera.GetComponent<ShaderEffect_BleedingColors>().shift = 0;
 
+
+        /*      GEAR CONTROLL      */
+        if (controller.GetShiftUp() && gear < 5)
+        {
+            gear++;
+            revolution -= 5 * 0.75f;
+        }
+        if (controller.GetShiftDown() && gear > 1)
+        {
+            gear--;
+            revolution = 5;
+        }
+
+        float maxSpeed = gear * 2;
+        float minSpeed = (gear - 1) * 2;
+        targetSpeed = gear * 2 + revolution / 2.5f;
         /*      REVOLUTION CONTROLL      */
-        if (controller.GetThrottle() > 0.05)
+        if (controller.GetThrottle() > 0.05 && speed > minSpeed - 0.5f)
         {
             revolution += controller.GetThrottle() * 10 * 20 * Time.deltaTime;
             revolution = Mathf.Min(revolution, 5);
+        }
+        if (controller.GetThrottle() > 0.05 && speed <= minSpeed - 0.5f)
+        {
+            revolution -= 20 * Time.deltaTime;
+            revolution = Mathf.Max(revolution, 0);
         }
         else if (!isDrifting)
         {
@@ -70,15 +85,6 @@ public class Car : MonoBehaviour
             revolution = Mathf.Max(revolution, 0);
         }
 
-        /*      SPEED CONTROLL      */
-        if (controller.GetShiftUp())
-            gear++;
-        gear = Mathf.Min(gear, 5);
-        if (controller.GetShiftDown())
-            gear--;
-        gear = Mathf.Max(gear, 1);
-
-        targetSpeed = gear * revolution / 2.5f;
         if (isDrifting)
         {
             speed -= 2 * Time.deltaTime;
@@ -94,10 +100,6 @@ public class Car : MonoBehaviour
         else if (targetSpeed < speed)
             speed += (targetSpeed - speed) * Time.deltaTime;
         transform.Translate(speed * 5 * transform.forward * Time.deltaTime, Space.World);
-        var settings = postProcessingProfile.chromaticAberration.settings;
-        settings.intensity = speed / 10f;
-        postProcessingProfile.chromaticAberration.settings = settings;
-        camera.fieldOfView = 60 - 2 * speed;
 
         /*      SOUND CONTROLL      */
         if (controller.GetThrottle() > 0 && audioSource.clip != running)

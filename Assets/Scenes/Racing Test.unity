@@ -191,6 +191,12 @@ BoxCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c92bea14e5c4591408be760558da7b90, type: 3}
   m_PrefabInternal: {fileID: 25664234}
+--- !u!114 &70939369 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114255586733459900, guid: 1cefaaf81ee3f754c87ae4ef11956861,
+    type: 2}
+  m_PrefabInternal: {fileID: 288228530}
+  m_Script: {fileID: 11500000, guid: 2fb1f376e29a44f4e88390537835b853, type: 3}
 --- !u!1001 &71815764
 Prefab:
   m_ObjectHideFlags: 0
@@ -10690,6 +10696,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 7
   shift: 0
+--- !u!114 &2092761203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092761201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1426664a5122444ca5ffd5dd10f1d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car: {fileID: 70939369}
 --- !u!1001 &2102268062
 Prefab:
   m_ObjectHideFlags: 0
