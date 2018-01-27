@@ -9,6 +9,9 @@ public class ControllerManager : MonoBehaviour {
     private InputDevice player1 = null;
     private InputDevice player2 = null;
 
+    private bool player1Ready;
+    private bool player2Ready;
+
     // Use this for initialization
     void Start() {
         if (SceneManager.GetActiveScene().name != "MainMenu") {
@@ -20,18 +23,45 @@ public class ControllerManager : MonoBehaviour {
     }
 
     void Update() {
-        if (InputManager.ActiveDevice.GetControl(InputControlType.Action1).WasPressed) {
-            InputDevice controller = InputManager.ActiveDevice;
-            if (player1 == null && controller != player2) {
-                player1 = InputManager.ActiveDevice;
-            } else if (player2 == null && controller != player1) {
-                player2 = InputManager.ActiveDevice;
-            }
-        }
-        player1 = CheckForControllerCancel(player1);
-        player2 = CheckForControllerCancel(player2);
-
         if (SceneManager.GetActiveScene().name == "MainMenu") {
+            if (InputManager.ActiveDevice.GetControl(InputControlType.Action1).WasPressed) {
+                InputDevice controller = InputManager.ActiveDevice;
+
+                if (controller == player1) {
+                    Debug.LogError("Player1 ready");
+                    player1Ready = true;
+                    Events.OnPlayerReady(true);
+                } else if (controller == player2) {
+                    Debug.LogError("Player2 ready");
+                    player2Ready = true;
+                    Events.OnPlayerReady(false);
+                }
+
+                if (player1 == null && controller != player2) {
+                    player1 = InputManager.ActiveDevice;
+                    player1Ready = false;
+                    Events.OnPlayerJoined(true);
+                } else if (player2 == null && controller != player1) {
+                    player2 = InputManager.ActiveDevice;
+                    player2Ready = false;
+                    Events.OnPlayerJoined(false);
+                }
+            }
+
+            if (InputManager.ActiveDevice.GetControl(InputControlType.Action2).WasReleased) {
+                InputDevice controller = InputManager.ActiveDevice;
+                if (controller == player1 && !player1Ready) {
+                    player1 = null;
+                    player1Ready = false;
+                    Events.OnPlayerLeft(true);
+                } else if (controller == player2 && !player2Ready) {
+                    player2 = null;
+                    player2Ready = false;
+                    Events.OnPlayerLeft(false); ;
+                }
+
+            }
+
             Debug.Log("Player 1: " + (player1 == null ? "null" : player1.Name) + " Player2: " + (player2 == null ? "null" : player2.Name));
         }
     }
