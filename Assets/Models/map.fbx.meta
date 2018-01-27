@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 2a578400dade55441bc0f9cbbb7d9096
+timeCreated: 1517068846
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Camera.001
+    100002: Drevo_01 Krosnja 01
+    100004: Drevo_02
+    100006: Drevo_03 Krosnja 01
+    100008: Drevo_06
+    100010: Kaktus_01
+    100012: Kaktus_02
+    100014: Kaktus_03
+    100016: Kaktus_04
+    100018: Kamen_01
+    100020: Kamen_02
+    100022: Kamen_03
+    100024: //RootNode
+    100026: Plane.006
+    100028: Plane.007
+    100030: Sun.003
+    100032: Tribuna_sedez.002
+    100034: Zaboj_01
+    100036: Zaboj_01_daljsi
+    100038: Zaboj_02
+    100040: Zaboj_02_daljsi
+    100042: Zabojnik_gajba_lesena.020
+    400000: Camera.001
+    400002: Drevo_01 Krosnja 01
+    400004: Drevo_02
+    400006: Drevo_03 Krosnja 01
+    400008: Drevo_06
+    400010: Kaktus_01
+    400012: Kaktus_02
+    400014: Kaktus_03
+    400016: Kaktus_04
+    400018: Kamen_01
+    400020: Kamen_02
+    400022: Kamen_03
+    400024: //RootNode
+    400026: Plane.006
+    400028: Plane.007
+    400030: Sun.003
+    400032: Tribuna_sedez.002
+    400034: Zaboj_01
+    400036: Zaboj_01_daljsi
+    400038: Zaboj_02
+    400040: Zaboj_02_daljsi
+    400042: Zabojnik_gajba_lesena.020
+    2000000: Camera.001
+    2100000: No Name
+    2100002: Material.004
+    2100004: Material.005
+    2100006: Material.002
+    2100008: Material.003
+    2300000: Drevo_01 Krosnja 01
+    2300002: Drevo_02
+    2300004: Drevo_03 Krosnja 01
+    2300006: Drevo_06
+    2300008: Kaktus_01
+    2300010: Kaktus_02
+    2300012: Kaktus_03
+    2300014: Kaktus_04
+    2300016: Kamen_01
+    2300018: Kamen_02
+    2300020: Kamen_03
+    2300022: Plane.006
+    2300024: Plane.007
+    2300026: Tribuna_sedez.002
+    2300028: Zaboj_01
+    2300030: Zaboj_01_daljsi
+    2300032: Zaboj_02
+    2300034: Zaboj_02_daljsi
+    2300036: Zabojnik_gajba_lesena.020
+    3300000: Drevo_01 Krosnja 01
+    3300002: Drevo_02
+    3300004: Drevo_03 Krosnja 01
+    3300006: Drevo_06
+    3300008: Kaktus_01
+    3300010: Kaktus_02
+    3300012: Kaktus_03
+    3300014: Kaktus_04
+    3300016: Kamen_01
+    3300018: Kamen_02
+    3300020: Kamen_03
+    3300022: Plane.006
+    3300024: Plane.007
+    3300026: Tribuna_sedez.002
+    3300028: Zaboj_01
+    3300030: Zaboj_01_daljsi
+    3300032: Zaboj_02
+    3300034: Zaboj_02_daljsi
+    3300036: Zabojnik_gajba_lesena.020
+    4300000: Tribuna_sedez.002
+    4300002: Kaktus_01
+    4300004: Kaktus_02
+    4300006: Kaktus_03
+    4300008: Kaktus_04
+    4300010: Zaboj_01_daljsi
+    4300012: Zaboj_02_daljsi
+    4300014: Zaboj_02
+    4300016: Zaboj_01
+    4300018: Zabojnik_gajba_lesena.020
+    4300020: Kamen_01
+    4300022: Kamen_02
+    4300024: Kamen_03
+    4300026: Drevo_01 Krosnja 01
+    4300028: Drevo_02
+    4300030: Drevo_03 Krosnja 01
+    4300032: Drevo_06
+    4300034: Plane.007
+    4300036: Plane.006
+    10800000: Sun.003
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: d0899f45f2db683488b5b65015d17725, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 644745e1d3b68cf498dc7a8be17e8db3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 3049f64e7c47878448bcc5352caeddd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: a5a41c64e0df5fc4588f8b26e8963fba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: ab1cdc4e4b7071b448006e950a4a4035, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

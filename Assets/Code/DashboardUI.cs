@@ -17,7 +17,7 @@ public class DashboardUI : MonoBehaviour
     {
         gear.text = car.gear.ToString();
         speed.text = car.speed.ToString("0.00");
-        revolution.text = car.revolution.ToString("0.00");
+        revolution.text = car.acceleration.ToString("0.00");
         wheelSprite.rotation = Quaternion.Euler(0, 0, -car.direction.y * 2);
 
     }

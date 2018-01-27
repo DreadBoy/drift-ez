@@ -27,10 +27,10 @@ public class CameraEffects : MonoBehaviour
         else
             bleedingColors.shift = 0;
 
-        camera.fieldOfView = 60 - 2 * car.speed;
+        camera.fieldOfView = 60 - car.speed / 5;
 
         var settings = postProcessingBehaviour.profile.chromaticAberration.settings;
-        settings.intensity = car.speed / 10f;
+        settings.intensity = car.speed / 100f;
         postProcessingBehaviour.profile.chromaticAberration.settings = settings;
     }
 }

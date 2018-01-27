@@ -595,7 +595,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -620,17 +620,23 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 0
   gear: 1
-  revolution: 0
+  acceleration: 0
   playerIndex: 0
   isDrifting: 0
   accelerationCurves:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
+      time: -0.1
       value: 0
       inSlope: 0
       outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0
+      value: 5
+      inSlope: 2.207756
+      outSlope: 2.207756
       tangentMode: 0
     - serializedVersion: 2
       time: 3.1829872
@@ -650,10 +656,16 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 10
-      value: 0
+      time: 9.9
+      value: -20
       inSlope: 0
       outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 10
+      value: 5
+      inSlope: 0.30994415
+      outSlope: 0.30994415
       tangentMode: 0
     - serializedVersion: 2
       time: 20.125214
@@ -673,10 +685,16 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 20
-      value: 0
+      time: 19.9
+      value: -20
       inSlope: 0
       outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 20
+      value: 5
+      inSlope: 0.41902065
+      outSlope: 0.41902065
       tangentMode: 0
     - serializedVersion: 2
       time: 45
@@ -1056,13 +1074,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.00
+  m_Text: 00.00
 --- !u!198 &198994351594385316
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4553,17 +4571,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422810280070186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000008060598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224924449551123702}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 108.30023, y: -38.900055}
-  m_SizeDelta: {x: 140, y: 145.79999}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -25, y: 0}
+  m_SizeDelta: {x: 200, y: 73.1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!224 &224199050647701178
 RectTransform:
   m_ObjectHideFlags: 1
@@ -4681,17 +4699,17 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1048557459616126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224924449551123702}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -107.29962, y: -38.900055}
-  m_SizeDelta: {x: 140, y: 145.79999}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: 200, y: 73.1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224879359037851990
 RectTransform:
   m_ObjectHideFlags: 1
@@ -4763,8 +4781,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224357923200134868}
-  - {fileID: 224126955234693954}
   - {fileID: 224824676714315848}
+  - {fileID: 224126955234693954}
   m_Father: {fileID: 224891669199118638}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

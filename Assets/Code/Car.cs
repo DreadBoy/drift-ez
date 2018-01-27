@@ -21,7 +21,7 @@ public class Car : MonoBehaviour
     [HideInInspector]
     public int gear = 1;
     [HideInInspector]
-    public float revolution = 0;
+    public float acceleration;
 
     [HideInInspector]
     public int playerIndex = 0;
@@ -31,8 +31,6 @@ public class Car : MonoBehaviour
     public AnimationCurve[] accelerationCurves;
     public AnimationCurve[] deccelerationCurves;
 
-    float targetSpeed;
-    float acceleration;
 
     private void Awake()
     {
@@ -44,10 +42,10 @@ public class Car : MonoBehaviour
     {
         /*      STEERING CONTROLL      */
         direction.y = 30 * controller.GetSteering();
-        isDrifting = speed > 7 && controller.IsHandBrakePressed() && Mathf.Abs(controller.GetSteering()) > 0.7f;
+        isDrifting = speed > 15 && controller.IsHandBrakePressed() && Mathf.Abs(controller.GetSteering()) > 0.7f;
         if (isDrifting)
         {
-            direction.y = (30 + revolution * 10) * controller.GetSteering();
+            direction.y = (30 + Mathf.Abs(speed)) * controller.GetSteering();
         }
         if (direction.y != 0 && speed > 0.05)
         {
@@ -77,14 +75,16 @@ public class Car : MonoBehaviour
 
         if (isDrifting)
         {
-            acceleration = -2;
+            speed -= (speed - 10) * Time.deltaTime;
         }
         else if (controller.IsHandBrakePressed())
         {
-            acceleration = -20;
+            speed -= 20 * Time.deltaTime;
         }
-        speed += acceleration * Time.deltaTime * 0.1f;
-        transform.Translate(speed * 5 * transform.forward * Time.deltaTime, Space.World);
+        else
+            speed += acceleration * Time.deltaTime;
+        speed = Mathf.Max(speed, 0);
+        transform.Translate(speed * transform.forward * Time.deltaTime, Space.World);
 
         /*      SOUND CONTROLL      */
         if (controller.GetThrottle() > 0 && audioSource.clip != running)
@@ -102,7 +102,6 @@ public class Car : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(0, 0, 300, 30), "revolution " + revolution);
-        GUI.Label(new Rect(0, 30, 300, 30), "handbrake " + controller.IsHandBrakePressed());
+        GUI.Label(new Rect(0, 0, 300, 30), "acceleration " + acceleration);
     }
 }
