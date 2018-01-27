@@ -53,7 +53,22 @@ public class KeyboardAndMouseProfile : UnityInputDeviceProfile {
                     Handle = "Action4",
                     Target = InputControlType.Action4,
                     Source = KeyCodeButton(KeyCode.Alpha4)
+                },
+
+                new InputControlMapping
+                {
+                    Handle = "LeftBumper",
+                Target = InputControlType.LeftBumper,
+                Source = KeyCodeButton(KeyCode.DownArrow)
+                },
+
+                new InputControlMapping
+                {
+                    Handle = "RightBumper",
+                Target = InputControlType.RightBumper,
+                Source = KeyCodeButton(KeyCode.UpArrow)
                 }
+
             };
 
         AnalogMappings = new[]
