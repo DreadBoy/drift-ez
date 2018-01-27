@@ -782,7 +782,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player1Animator: {fileID: 299543493}
+  Player1ReadyText: {fileID: 2134194665}
   Player2Animator: {fileID: 375592389}
+  Player2ReadyText: {fileID: 1681254339}
 --- !u!1 &1681254337
 GameObject:
   m_ObjectHideFlags: 0
