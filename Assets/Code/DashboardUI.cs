@@ -21,13 +21,21 @@ public class DashboardUI : MonoBehaviour
 
         speedSlider.SetValue(car.speed);
         float acceleration = 10 - car.acceleration;
-        if (acceleration > 10)
-            acceleration = 0;
-        accelerationSlider.SetValue(acceleration);
-        if (0 < car.acceleration && car.acceleration < 2)
+        if (8 < acceleration && acceleration < 10)
+        {
+            accelerationSlider.SetValue(acceleration);
             accelerationSlider.SetColor(new Color(61 / 255f, 255 / 255f, 49 / 255f));
+        }
+        else if (acceleration > 10)
+        {
+            accelerationSlider.SetValue(10);
+            accelerationSlider.SetColor(new Color(1, 0, 0));
+        }
         else
+        {
+            accelerationSlider.SetValue(acceleration);
             accelerationSlider.ResetColor();
+        }
         wheelSprite.rotation = Quaternion.Euler(0, 0, -car.direction.y * 2);
 
 
