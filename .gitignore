@@ -41,3 +41,4 @@ test.dat
 
 # Backup files by Blender
 *.blend1
+VersionInfo.cs
