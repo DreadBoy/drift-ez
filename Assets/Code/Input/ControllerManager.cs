@@ -70,4 +70,8 @@ public class ControllerManager : MonoBehaviour {
     public InputDevice GetPlayer2InputDevice() {
         return player2;
     }
+
+    public InputDevice GetKeyboard() {
+        return keyboard;
+    }
 }

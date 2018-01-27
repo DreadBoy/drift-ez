@@ -22,6 +22,7 @@ public class SceneSetup : MonoBehaviour {
             car.camera.rect = new Rect(i * 1f / placeholders.Length, 0, 1f / placeholders.Length, 1);
             if (controllerManager != null) {
                 car.controller.SetInputDevice(controllerManager.GetInputDeviceForPlayer(i));
+                car.controller.SetKeyboard(controllerManager.GetKeyboard());
             }
         };
 

@@ -20,6 +20,10 @@ public class Controller : MonoBehaviour {
         this.inputDevice = inputDevice;
     }
 
+    public void SetKeyboard(InputDevice keyboard) {
+        this.keyboard = keyboard;
+    }
+
     public InputDevice GetInputDevice() {
         return inputDevice;
     }
@@ -37,11 +41,11 @@ public class Controller : MonoBehaviour {
     }
 
     public bool GetShiftUp() {
-        return inputDevice.GetControl(InputControlType.DPadUp).WasPressed;
+        return keyboard.GetControl(InputControlType.RightBumper).WasPressed;
     }
 
     public bool GetShiftDown() {
-        return inputDevice.GetControl(InputControlType.DPadDown).WasPressed;
+        return keyboard.GetControl(InputControlType.LeftBumper).WasPressed;
     }
 
     public bool IsClutchPressed() {
