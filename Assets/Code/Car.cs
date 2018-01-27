@@ -28,8 +28,11 @@ public class Car : MonoBehaviour
     [HideInInspector]
     public bool isDrifting;
 
+    public AnimationCurve[] accelerationCurves;
+    public AnimationCurve[] deccelerationCurves;
+
     float targetSpeed;
-    IEnumerator driftingCamera;
+    float acceleration;
 
     private void Awake()
     {
@@ -52,53 +55,35 @@ public class Car : MonoBehaviour
             transform.Rotate(0, sign * direction.y * Time.deltaTime, 0);
         }
 
-
         /*      GEAR CONTROLL      */
-        if (controller.GetShiftUp() && gear < 5)
+        if (controller.GetShiftUp() && gear < accelerationCurves.Length)
         {
             gear++;
-            revolution -= 5 * 0.75f;
         }
         if (controller.GetShiftDown() && gear > 1)
         {
             gear--;
-            revolution = 5;
         }
 
-        float maxSpeed = gear * 2;
-        float minSpeed = (gear - 1) * 2;
-        targetSpeed = gear * 2 + revolution / 2.5f;
         /*      REVOLUTION CONTROLL      */
-        if (controller.GetThrottle() > 0.05 && speed > minSpeed - 0.5f)
+        if (controller.GetThrottle() > 0.05)
         {
-            revolution += controller.GetThrottle() * 10 * 20 * Time.deltaTime;
-            revolution = Mathf.Min(revolution, 5);
+            acceleration = accelerationCurves[gear - 1].Evaluate(speed) * controller.GetThrottle();
         }
-        if (controller.GetThrottle() > 0.05 && speed <= minSpeed - 0.5f)
+        else
         {
-            revolution -= 20 * Time.deltaTime;
-            revolution = Mathf.Max(revolution, 0);
-        }
-        else if (!isDrifting)
-        {
-            revolution -= 10 * Time.deltaTime;
-            revolution = Mathf.Max(revolution, 0);
+            acceleration = -deccelerationCurves[gear - 1].Evaluate(speed);
         }
 
         if (isDrifting)
         {
-            speed -= 2 * Time.deltaTime;
-            speed = Mathf.Max(speed, 0);
+            acceleration = -2;
         }
         else if (controller.IsHandBrakePressed())
         {
-            speed -= 10 * Time.deltaTime;
-            speed = Mathf.Max(speed, 0);
+            acceleration = -20;
         }
-        else if (targetSpeed > speed)
-            speed += (targetSpeed - speed) / 2 * Time.deltaTime;
-        else if (targetSpeed < speed)
-            speed += (targetSpeed - speed) * Time.deltaTime;
+        speed += acceleration * Time.deltaTime * 0.1f;
         transform.Translate(speed * 5 * transform.forward * Time.deltaTime, Space.World);
 
         /*      SOUND CONTROLL      */
@@ -117,7 +102,7 @@ public class Car : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(0, 0, 300, 30), "steering " + controller.GetSteering().ToString());
+        GUI.Label(new Rect(0, 0, 300, 30), "revolution " + revolution);
         GUI.Label(new Rect(0, 30, 300, 30), "handbrake " + controller.IsHandBrakePressed());
     }
 }
