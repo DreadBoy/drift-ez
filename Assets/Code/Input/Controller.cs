@@ -9,8 +9,6 @@ public class Controller : MonoBehaviour {
 
     void Awake() {
         inputDevice = InputManager.ActiveDevice;
-
-
     }
 
     public void SetInputDevice(InputDevice inputDevice) {
@@ -26,15 +24,23 @@ public class Controller : MonoBehaviour {
     }
 
     public float GetSteering() {
+        if (inputDevice == null)
+            return 0;
         return inputDevice.GetControl(InputControlType.LeftStickX).Value;
     }
 
-    public float GetThrottle() {
-        return Mathf.Max(inputDevice.GetControl(InputControlType.RightStickY).Value, 0.0f);
+    public float GetThrottle()
+    {
+        if (inputDevice == null)
+            return 0;
+        return Mathf.Max(inputDevice.GetControl(InputControlType.RightBumper).Value, 0.0f);
     }
 
-    public float GetBrake() {
-        return -Mathf.Min(inputDevice.GetControl(InputControlType.RightStickY).Value, 0.0f);
+    public float GetBrake()
+    {
+        if (inputDevice == null)
+            return 0;
+        return -Mathf.Min(inputDevice.GetControl(InputControlType.LeftBumper).Value, 0.0f);
     }
 
     public bool GetShiftUp() {
