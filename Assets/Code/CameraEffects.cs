@@ -32,5 +32,12 @@ public class CameraEffects : MonoBehaviour
         var settings = postProcessingBehaviour.profile.chromaticAberration.settings;
         settings.intensity = car.speed / 100f;
         postProcessingBehaviour.profile.chromaticAberration.settings = settings;
+
+        var vignette = postProcessingBehaviour.profile.vignette.settings;
+        if (car.acceleration < 0 && car.controller.GetThrottle() > 0)
+            vignette.intensity = 0.636F;
+        else
+            vignette.intensity = 0f;
+        postProcessingBehaviour.profile.vignette.settings = vignette;
     }
 }

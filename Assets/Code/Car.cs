@@ -63,7 +63,7 @@ public class Car : MonoBehaviour
             gear--;
         }
 
-        /*      REVOLUTION CONTROLL      */
+        /*      ACCELERATION CONTROLL      */
         if (controller.GetThrottle() > 0.05)
         {
             acceleration = accelerationCurves[gear - 1].Evaluate(speed) * controller.GetThrottle();
