@@ -37,7 +37,5 @@ public class DashboardUI : MonoBehaviour
             accelerationSlider.ResetColor();
         }
         wheelSprite.rotation = Quaternion.Euler(0, 0, -car.direction.y * 2);
-
-
     }
 }
