@@ -6,6 +6,11 @@ public class SceneSetup : MonoBehaviour {
     public AudioClip musicLoop;
 
     void Start() {
+        new GameObject().AddComponent<AudioListener>().name = "Audio listener";
+
+        AudioSource audioSource = new GameObject().AddComponent<AudioSource>();
+        audioSource.clip = musicLoop;
+        audioSource.Play();
 
         CarPlaceholder[] placeholders = FindObjectsOfType<CarPlaceholder>();
         if (placeholders.Length != 2) {
@@ -23,17 +28,12 @@ public class SceneSetup : MonoBehaviour {
             if (controllerManager != null) {
                 car.controller.SetInputDevice(controllerManager.GetInputDeviceForPlayer(i));
                 car.controller.SetPlayer(i == 0);
+                car.playerIndex = i;
             }
         };
 
         foreach (var placeholder in placeholders)
             Destroy(placeholder.gameObject);
-
-        new GameObject().AddComponent<AudioListener>().name = "Audio listener";
-
-        AudioSource audioSource = new GameObject().AddComponent<AudioSource>();
-        audioSource.clip = musicLoop;
-        audioSource.Play();
     }
 
     [MenuItem("GameObject/Create Other/Scene Setup", false, 10)]

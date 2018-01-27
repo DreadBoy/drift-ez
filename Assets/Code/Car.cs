@@ -5,7 +5,9 @@
 public class Car : MonoBehaviour
 {
 
+    [HideInInspector]
     public new Camera camera;
+    [HideInInspector]
     public Controller controller;
     AudioSource audioSource;
 
@@ -19,6 +21,9 @@ public class Car : MonoBehaviour
     public int gear = 1;
     [HideInInspector]
     public float revolution = 0;
+
+    [HideInInspector]
+    public int playerIndex = 0;
 
     float targetSpeed;
 
