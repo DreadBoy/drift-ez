@@ -15,7 +15,7 @@ public class Car : MonoBehaviour {
     float speed = 0;
 
     private void Awake() {
-        camera = GetComponent<Camera>();
+        camera = GetComponentInChildren<Camera>();
         controller = GetComponent<Controller>();
         audioSource = GetComponent<AudioSource>();
     }
