@@ -27,6 +27,15 @@ ModelImporter:
     100038: Zaboj_02
     100040: Zaboj_02_daljsi
     100042: Zabojnik_gajba_lesena.020
+    100044: Lesena_ograja_ograja_03
+    100046: Lesena_ograja_palica_01
+    100048: palma_list.001
+    100050: Sod_lesen
+    100052: Sod_plasticen
+    100054: Uta_osnova
+    100056: Uta_osnova.006
+    100058: Uta_streha.011
+    100060: Zelezna_ograja_palica_01
     400000: Camera.001
     400002: Drevo_01 Krosnja 01
     400004: Drevo_02
@@ -49,12 +58,37 @@ ModelImporter:
     400038: Zaboj_02
     400040: Zaboj_02_daljsi
     400042: Zabojnik_gajba_lesena.020
+    400044: Lesena_ograja_ograja_03
+    400046: Lesena_ograja_palica_01
+    400048: palma_list.001
+    400050: Sod_lesen
+    400052: Sod_plasticen
+    400054: Uta_osnova
+    400056: Uta_osnova.006
+    400058: Uta_streha.011
+    400060: Zelezna_ograja_palica_01
     2000000: Camera.001
     2100000: No Name
     2100002: Material.004
     2100004: Material.005
     2100006: Material.002
     2100008: Material.003
+    2100010: Material.023
+    2100012: Material.012
+    2100014: Material.011
+    2100016: Material.016
+    2100018: Material.006
+    2100020: Material.009
+    2100022: Material.019
+    2100024: Material.018
+    2100026: Material.021
+    2100028: Material.022
+    2100030: Material.020
+    2100032: Material.017
+    2100034: Material.015
+    2100036: Material.008
+    2100038: Material.024
+    2100040: Material.025
     2300000: Drevo_01 Krosnja 01
     2300002: Drevo_02
     2300004: Drevo_03 Krosnja 01
@@ -74,6 +108,15 @@ ModelImporter:
     2300032: Zaboj_02
     2300034: Zaboj_02_daljsi
     2300036: Zabojnik_gajba_lesena.020
+    2300038: Lesena_ograja_ograja_03
+    2300040: Lesena_ograja_palica_01
+    2300042: palma_list.001
+    2300044: Sod_lesen
+    2300046: Sod_plasticen
+    2300048: Uta_osnova
+    2300050: Uta_osnova.006
+    2300052: Uta_streha.011
+    2300054: Zelezna_ograja_palica_01
     3300000: Drevo_01 Krosnja 01
     3300002: Drevo_02
     3300004: Drevo_03 Krosnja 01
@@ -93,6 +136,15 @@ ModelImporter:
     3300032: Zaboj_02
     3300034: Zaboj_02_daljsi
     3300036: Zabojnik_gajba_lesena.020
+    3300038: Lesena_ograja_ograja_03
+    3300040: Lesena_ograja_palica_01
+    3300042: palma_list.001
+    3300044: Sod_lesen
+    3300046: Sod_plasticen
+    3300048: Uta_osnova
+    3300050: Uta_osnova.006
+    3300052: Uta_streha.011
+    3300054: Zelezna_ograja_palica_01
     4300000: Tribuna_sedez.002
     4300002: Kaktus_01
     4300004: Kaktus_02
@@ -112,6 +164,15 @@ ModelImporter:
     4300032: Drevo_06
     4300034: Plane.007
     4300036: Plane.006
+    4300038: Uta_streha.011
+    4300040: Uta_osnova.006
+    4300042: Uta_osnova
+    4300044: Zelezna_ograja_palica_01
+    4300046: Lesena_ograja_ograja_03
+    4300048: Lesena_ograja_palica_01
+    4300050: Sod_lesen
+    4300052: Sod_plasticen
+    4300054: palma_list.001
     10800000: Sun.003
   externalObjects:
   - first:
@@ -128,17 +189,97 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.004
-    second: {fileID: 2100000, guid: 3049f64e7c47878448bcc5352caeddd0, type: 2}
+    second: {fileID: 2100000, guid: 78a08a8dcf745864eaa0282b5c860a2d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.005
-    second: {fileID: 2100000, guid: a5a41c64e0df5fc4588f8b26e8963fba, type: 2}
+    second: {fileID: 2100000, guid: cff3ec7523c12b54685c97cdb4f78dcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: e0ace91b04eb8b143950124b3f173e3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 1ba70e9d022a3e54787f483bc0e34b86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 061e921e85dcbe0428db9f6448913e83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: ad112ae8c2f0b77439fce057fb1c103b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 19b95547da0c88543b6814bd37fc5529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.015
+    second: {fileID: 2100000, guid: 81d57b9c0fef3544ab8cc4b80b40e23a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: eda04a2dcd3004e49a1fc18fa4f25fa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.017
+    second: {fileID: 2100000, guid: 20d9ffa7b7c64a44ebad827ed6092ff0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.018
+    second: {fileID: 2100000, guid: 37557ea4c1ab8464c840f03c887a9cf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.019
+    second: {fileID: 2100000, guid: 6dc59d6b08438dc44992fde48f2cbf5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.020
+    second: {fileID: 2100000, guid: 99efcad8bd94caa4d82522e8c2eaaef6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.021
+    second: {fileID: 2100000, guid: 68665d93efea0fb47b0705c15fa81f5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.022
+    second: {fileID: 2100000, guid: 800252d4a4f5ba04bacf8f4f616a1580, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.023
+    second: {fileID: 2100000, guid: 47d9dcbb958933541a196b65c930e2f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.024
+    second: {fileID: 2100000, guid: 9f9b831607e67354f8c7f04a6876f8e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.025
+    second: {fileID: 2100000, guid: ea7986a651cc74f43a6b05b58850a659, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: ab1cdc4e4b7071b448006e950a4a4035, type: 2}
+    second: {fileID: 2100000, guid: e9966b8965d3cff4793c1c7ca8a2669f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
