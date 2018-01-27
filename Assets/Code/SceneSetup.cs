@@ -2,6 +2,7 @@
 using UnityEditor;
 #endif
 using UnityEngine;
+using System.Linq;
 
 public class SceneSetup : MonoBehaviour {
     public Car carPrefab;
@@ -19,20 +20,26 @@ public class SceneSetup : MonoBehaviour {
             Debug.LogError("You need to place 2 car placeholders in scene!");
             return;
         }
-
+        int playerCount = 2;
         ControllerManager controllerManager = FindObjectOfType<ControllerManager>();
+        if (controllerManager == null || controllerManager.GetPlayer2InputDevice() == null) {
+            playerCount = 1;
+        }
 
-        for (int i = 0; i < placeholders.Length; i++) {
+        Debug.LogError("Player count: " + playerCount);
+
+        for (int i = 0; i < playerCount; i++) {
+            Debug.LogError("Creating car " + i); ;
             Car car = Instantiate(carPrefab);
             car.transform.position = placeholders[i].transform.position;
             car.transform.rotation = placeholders[i].transform.rotation;
-            car.GetComponent<Camera>().rect = new Rect(i * 1f / placeholders.Length, 0, 1f / placeholders.Length, 1);
+            car.GetComponentInChildren<Camera>().rect = new Rect(i * 1f / playerCount, 0, 1f / playerCount, 1);
             if (controllerManager != null) {
                 car.controller.SetInputDevice(controllerManager.GetInputDeviceForPlayer(i));
                 car.controller.SetPlayer(i == 0);
                 car.playerIndex = i;
             }
-        };
+        }
 
         foreach (var placeholder in placeholders)
             Destroy(placeholder.gameObject);

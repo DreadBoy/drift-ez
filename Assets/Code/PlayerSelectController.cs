@@ -44,17 +44,18 @@ public class PlayerSelectController : MonoBehaviour {
     }
 
     private void PlayerReady(bool isPlayer1) {
-        if (isPlayer1) {
-            player1Ready = true;
-            Player1ReadyText.text = "Ready!";
+        StartGame();
+        //if (isPlayer1) {
+        //    player1Ready = true;
+        //    Player1ReadyText.text = "Ready!";
 
-        } else {
-            player2Ready = true;
-            Player2ReadyText.text = "Ready!";
-        }
-        if (player1Ready && player2Ready) {
-            StartGame();
-        }
+        //} else {
+        //    player2Ready = true;
+        //    Player2ReadyText.text = "Ready!";
+        //}
+        //if (player1Ready && player2Ready) {
+        //    StartGame();
+        //}
 
     }
 
