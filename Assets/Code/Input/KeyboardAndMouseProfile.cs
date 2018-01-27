@@ -66,7 +66,7 @@ public class KeyboardAndMouseProfile : UnityInputDeviceProfile {
                 {
                     Handle = "RightBumper",
                 Target = InputControlType.RightBumper,
-                Source = KeyCodeButton(KeyCode.UpArrow)
+                Source = KeyCodeButton(KeyCode.P)
                 }
 
             };
@@ -84,8 +84,8 @@ public class KeyboardAndMouseProfile : UnityInputDeviceProfile {
                 new InputControlMapping
                 {
                     Handle = "Throttle/Brake",
-                    Target = InputControlType.RightStickY,
-                    Source = KeyCodeAxis(KeyCode.S, KeyCode.W )
+                    Target = InputControlType.RightTrigger,
+                Source = KeyCodeAxis(KeyCode.L, KeyCode.O )
                 }
             };
     }
