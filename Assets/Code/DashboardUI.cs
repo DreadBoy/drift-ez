@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class DashboardUI : MonoBehaviour {
+public class DashboardUI : MonoBehaviour
+{
 
     public Car car;
     public Text gear;
@@ -9,11 +10,13 @@ public class DashboardUI : MonoBehaviour {
     public MaskedSlider accelerationSlider;
     public MaskedSlider speedSlider;
 
-    private void Start() {
+    private void Start()
+    {
         GetComponent<RectTransform>().anchoredPosition = new Vector2(960 * car.playerIndex, 0);
     }
 
-    void Update() {
+    void Update()
+    {
         gear.text = car.gear.ToString();
 
         speedSlider.SetValue(car.speed);
@@ -21,11 +24,10 @@ public class DashboardUI : MonoBehaviour {
         if (acceleration > 10)
             acceleration = 0;
         accelerationSlider.SetValue(acceleration);
-        Debug.Log(10 - acceleration);
-        //if (car.acceleration < 2)
-        //    accelerationSlider.SetColor(new Color(61, 255, 49));
-        //else
-        //    accelerationSlider.ResetColor();
+        if (0 < car.acceleration && car.acceleration < 2)
+            accelerationSlider.SetColor(new Color(61 / 255f, 255 / 255f, 49 / 255f));
+        else
+            accelerationSlider.ResetColor();
         wheelSprite.rotation = Quaternion.Euler(0, 0, -car.direction.y * 2);
 
 

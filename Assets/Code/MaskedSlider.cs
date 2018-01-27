@@ -24,6 +24,7 @@ public class MaskedSlider : MonoBehaviour
     {
         maxHeight = this.GetComponent<RectTransform>().rect.height;
         maxWidth = this.GetComponent<RectTransform>().rect.width;
+        defaultColor = image.color;
     }
 
     public void SetValue(float value)
@@ -41,14 +42,13 @@ public class MaskedSlider : MonoBehaviour
 
     public void SetColor(Color color)
     {
-        if (defaultColor == null)
-            defaultColor = image.color;
         image.color = color;
+        Debug.Log(color);
     }
 
     public void ResetColor()
     {
-        if (defaultColor != null)
-            image.color = defaultColor;
+        image.color = defaultColor;
+        Debug.Log("RESET");
     }
 }
