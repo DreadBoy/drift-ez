@@ -1,15 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.PostProcessing;
 
 [RequireComponent(typeof(Controller))]
 [RequireComponent(typeof(AudioSource))]
 public class Car : MonoBehaviour
 {
 
-    [HideInInspector]
     public new Camera camera;
+    public Transform model;
     [HideInInspector]
     public Controller controller;
     AudioSource audioSource;
+    public PostProcessingProfile postProcessingProfile;
 
     [SerializeField]
     AudioClip idle = null, running = null;
@@ -28,10 +31,10 @@ public class Car : MonoBehaviour
 
     float targetSpeed;
     bool isDrifting;
+    IEnumerator driftingCamera;
 
     private void Awake()
     {
-        camera = GetComponentInChildren<Camera>();
         controller = GetComponent<Controller>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -50,6 +53,10 @@ public class Car : MonoBehaviour
             float sign = speed / Mathf.Abs(speed);
             transform.Rotate(0, sign * direction.y * Time.deltaTime, 0);
         }
+        if (isDrifting)
+            camera.GetComponent<ShaderEffect_BleedingColors>().shift = -controller.GetSteering();
+        else
+            camera.GetComponent<ShaderEffect_BleedingColors>().shift = 0;
 
         /*      REVOLUTION CONTROLL      */
         if (controller.GetThrottle() > 0.05)
@@ -72,11 +79,25 @@ public class Car : MonoBehaviour
         gear = Mathf.Max(gear, 1);
 
         targetSpeed = gear * revolution / 2.5f;
-        if (targetSpeed > speed)
+        if (isDrifting)
+        {
+            speed -= 2 * Time.deltaTime;
+            speed = Mathf.Max(speed, 0);
+        }
+        else if (controller.IsHandBrakePressed())
+        {
+            speed -= 10 * Time.deltaTime;
+            speed = Mathf.Max(speed, 0);
+        }
+        else if (targetSpeed > speed)
             speed += (targetSpeed - speed) / 2 * Time.deltaTime;
         else if (targetSpeed < speed)
             speed += (targetSpeed - speed) * Time.deltaTime;
         transform.Translate(speed * 5 * transform.forward * Time.deltaTime, Space.World);
+        var settings = postProcessingProfile.chromaticAberration.settings;
+        settings.intensity = speed / 10f;
+        postProcessingProfile.chromaticAberration.settings = settings;
+        camera.fieldOfView = 60 - 2 * speed;
 
         /*      SOUND CONTROLL      */
         if (controller.GetThrottle() > 0 && audioSource.clip != running)

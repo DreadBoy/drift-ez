@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR 
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class SceneSetup : MonoBehaviour {
@@ -36,8 +38,10 @@ public class SceneSetup : MonoBehaviour {
             Destroy(placeholder.gameObject);
     }
 
+#if UNITY_EDITOR
     [MenuItem("GameObject/Create Other/Scene Setup", false, 10)]
     static void Create() {
         new GameObject().AddComponent<SceneSetup>().name = "Scene setup";
     }
+#endif
 }
