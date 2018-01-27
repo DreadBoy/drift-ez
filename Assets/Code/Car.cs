@@ -14,7 +14,8 @@ public class Car : MonoBehaviour
     [SerializeField]
     AudioClip idle = null, running = null;
 
-    Vector3 direction = Vector3.zero;
+    [HideInInspector]
+    public Vector3 direction = Vector3.zero;
     [HideInInspector]
     public float speed = 0;
     [HideInInspector]
@@ -37,7 +38,7 @@ public class Car : MonoBehaviour
     void Update()
     {
         direction.y = 30 * controller.GetSteering();
-        if (direction.y != 0 && speed > 0)
+        if (direction.y != 0 && speed > 0.05)
         {
             float sign = speed / Mathf.Abs(speed);
             transform.Rotate(0, sign * direction.y * Time.deltaTime, 0);

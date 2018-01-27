@@ -1,12 +1,13 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class CarPlaceholder : MonoBehaviour
 {
 
     void Update()
     {
-        Debug.DrawRay(transform.position, transform.forward * 5);
+        Debug.DrawRay(transform.position, transform.forward * 5, Color.green);
     }
 
     [MenuItem("GameObject/Create Other/Car Placeholder", false, 10)]

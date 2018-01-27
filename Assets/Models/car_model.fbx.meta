@@ -1,74 +1,22 @@
 fileFormatVersion: 2
 guid: 90e2f06b86ee5be47a60c7d3750ddb82
-timeCreated: 1517018966
+timeCreated: 1517052055
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube.003
-    100004: Cube.004
-    100006: Cube.005
-    100008: Cylinder.002
-    100010: Cylinder.003
-    100012: Plane.003
-    100014: Plane.004
-    100016: Sphere.001
-    100018: tire-b_r.001
-    100020: tire_b_l.001
-    100022: tire_f_l.001
-    100024: tire_f_r.001
     400000: //RootNode
-    400002: Cube.003
-    400004: Cube.004
-    400006: Cube.005
-    400008: Cylinder.002
-    400010: Cylinder.003
-    400012: Plane.003
-    400014: Plane.004
-    400016: Sphere.001
-    400018: tire-b_r.001
-    400020: tire_b_l.001
-    400022: tire_f_l.001
-    400024: tire_f_r.001
-    2100000: No Name
-    2300000: Cube.003
-    2300002: Cube.004
-    2300004: Cube.005
-    2300006: Cylinder.002
-    2300008: Cylinder.003
-    2300010: Plane.003
-    2300012: Plane.004
-    2300014: Sphere.001
-    2300016: tire-b_r.001
-    2300018: tire_b_l.001
-    2300020: tire_f_l.001
-    2300022: tire_f_r.001
-    3300000: Cube.003
-    3300002: Cube.004
-    3300004: Cube.005
-    3300006: Cylinder.002
-    3300008: Cylinder.003
-    3300010: Plane.003
-    3300012: Plane.004
-    3300014: Sphere.001
-    3300016: tire-b_r.001
-    3300018: tire_b_l.001
-    3300020: tire_f_l.001
-    3300022: tire_f_r.001
-    4300000: tire-b_r.001
-    4300002: Cube.005
-    4300004: Sphere.001
-    4300006: Plane.004
-    4300008: Cube.004
-    4300010: Cube.003
-    4300012: Cylinder.003
-    4300014: Cylinder.002
-    4300016: Plane.003
-    4300018: tire_f_l.001
-    4300020: tire_f_r.001
-    4300022: tire_b_l.001
-  externalObjects: {}
+    2100000: Material.001
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane.005
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 97dc374b93ea6ae4a86f5ee925b68914, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
