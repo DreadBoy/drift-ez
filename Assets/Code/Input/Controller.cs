@@ -80,6 +80,13 @@ public class Controller : MonoBehaviour
 
     public bool IsHandBrakePressed()
     {
-        return inputDevice.GetControl(InputControlType.Action3).IsPressed;
+        if (isPlayer1)
+        {
+            return Input.GetKey(KeyCode.LeftShift);
+        }
+        else
+        {
+            return Input.GetKey(KeyCode.RightShift);
+        }
     }
 }
