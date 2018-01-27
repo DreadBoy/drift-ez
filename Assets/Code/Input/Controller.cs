@@ -1,18 +1,15 @@
 ﻿using InControl;
 using UnityEngine;
+using System;
 
 public class Controller : MonoBehaviour {
 
     InputDevice inputDevice;
-    InputDevice keyboard;
+    bool isPlayer1 = true;
 
     void Awake() {
         inputDevice = InputManager.ActiveDevice;
-        foreach (InputDevice device in InputManager.Devices) {
-            if (device.Name == "Keyboard") {
-                keyboard = device; ;
-            }
-        }
+
 
     }
 
@@ -20,8 +17,8 @@ public class Controller : MonoBehaviour {
         this.inputDevice = inputDevice;
     }
 
-    public void SetKeyboard(InputDevice keyboard) {
-        this.keyboard = keyboard;
+    public void SetPlayer(bool isPlayer1) {
+        this.isPlayer1 = isPlayer1;
     }
 
     public InputDevice GetInputDevice() {
@@ -41,11 +38,19 @@ public class Controller : MonoBehaviour {
     }
 
     public bool GetShiftUp() {
-        return keyboard.GetControl(InputControlType.RightBumper).WasPressed;
+        if (isPlayer1) {
+            return Input.GetKeyDown(KeyCode.UpArrow);
+        } else {
+            return Input.GetKeyDown(KeyCode.W);
+        }
     }
 
     public bool GetShiftDown() {
-        return keyboard.GetControl(InputControlType.LeftBumper).WasPressed;
+        if (isPlayer1) {
+            return Input.GetKeyDown(KeyCode.DownArrow);
+        } else {
+            return Input.GetKeyDown(KeyCode.S);
+        }
     }
 
     public bool IsClutchPressed() {

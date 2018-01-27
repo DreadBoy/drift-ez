@@ -8,7 +8,6 @@ public class ControllerManager : MonoBehaviour {
 
     private InputDevice player1 = null;
     private InputDevice player2 = null;
-    private InputDevice keyboard = null;
 
     // Use this for initialization
     void Start() {
@@ -16,12 +15,6 @@ public class ControllerManager : MonoBehaviour {
             if (player1 == null && player2 == null) {
                 Debug.LogError("No device selected -> Using default input device");
                 player1 = InputManager.ActiveDevice;
-            }
-        }
-
-        foreach (InputDevice device in InputManager.Devices) {
-            if (device.Name == "Keyboard") {
-                keyboard = device;
             }
         }
     }
@@ -39,7 +32,7 @@ public class ControllerManager : MonoBehaviour {
         player2 = CheckForControllerCancel(player2);
 
         if (SceneManager.GetActiveScene().name == "MainMenu") {
-            Debug.Log("Player 1: " + (player1 == null ? "null" : player1.Name) + " Player2: " + (player2 == null ? "null" : player2.Name) + " Keyboard: " + (keyboard == null ? "null" : keyboard.Name));
+            Debug.Log("Player 1: " + (player1 == null ? "null" : player1.Name) + " Player2: " + (player2 == null ? "null" : player2.Name));
         }
     }
 
@@ -69,9 +62,5 @@ public class ControllerManager : MonoBehaviour {
 
     public InputDevice GetPlayer2InputDevice() {
         return player2;
-    }
-
-    public InputDevice GetKeyboard() {
-        return keyboard;
     }
 }
