@@ -8,6 +8,11 @@ public class Controller : MonoBehaviour {
 
     void Awake() {
         inputDevice = InputManager.ActiveDevice;
+        foreach (InputDevice device in InputManager.Devices) {
+            if (device.Name == "Keyboard") {
+                keyboard = device; ;
+            }
+        }
 
     }
 
