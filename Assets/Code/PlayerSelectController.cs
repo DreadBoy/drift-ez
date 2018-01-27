@@ -10,7 +10,13 @@ public class PlayerSelectController : MonoBehaviour {
     Animator Player1Animator;
 
     [SerializeField]
+    TextMesh Player1ReadyText;
+
+    [SerializeField]
     Animator Player2Animator;
+
+    [SerializeField]
+    TextMesh Player2ReadyText;
 
     bool player1Ready;
     bool player2Ready;
@@ -40,8 +46,11 @@ public class PlayerSelectController : MonoBehaviour {
     private void PlayerReady(bool isPlayer1) {
         if (isPlayer1) {
             player1Ready = true;
+            Player1ReadyText.text = "Ready!";
+
         } else {
             player2Ready = true;
+            Player2ReadyText.text = "Ready!";
         }
         if (player1Ready && player2Ready) {
             StartGame();
