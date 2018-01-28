@@ -9,6 +9,8 @@ public class Car : MonoBehaviour
     [HideInInspector]
     public Controller controller;
     AudioSource audioSource;
+    [SerializeField]
+    Collider trackCollider;
 
     [SerializeField]
     AudioClip idle = null, running = null;
