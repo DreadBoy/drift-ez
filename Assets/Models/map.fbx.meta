@@ -249,6 +249,7 @@ ModelImporter:
     100482: Zaboj_02_daljsi.001
     100484: Zabojnik_gajba_lesena.000
     100486: Zelezna_ograja_palica_01.001
+    100488: Start_zastava_steber.001
     400000: Camera.001
     400002: Drevo_01 Krosnja 01
     400004: Drevo_02
@@ -493,6 +494,7 @@ ModelImporter:
     400482: Zaboj_02_daljsi.001
     400484: Zabojnik_gajba_lesena.000
     400486: Zelezna_ograja_palica_01.001
+    400488: Start_zastava_steber.001
     2000000: Camera.001
     2000002: Camera
     2100000: No Name
@@ -535,6 +537,7 @@ ModelImporter:
     2100074: Material.028
     2100076: Material.038
     2100078: Material.040
+    2100080: Material.045
     2300000: Drevo_01 Krosnja 01
     2300002: Drevo_02
     2300004: Drevo_03 Krosnja 01
@@ -774,6 +777,7 @@ ModelImporter:
     2300472: Zaboj_02_daljsi.001
     2300474: Zabojnik_gajba_lesena.000
     2300476: Zelezna_ograja_palica_01.001
+    2300478: Start_zastava_steber.001
     3300000: Drevo_01 Krosnja 01
     3300002: Drevo_02
     3300004: Drevo_03 Krosnja 01
@@ -1013,6 +1017,7 @@ ModelImporter:
     3300472: Zaboj_02_daljsi.001
     3300474: Zabojnik_gajba_lesena.000
     3300476: Zelezna_ograja_palica_01.001
+    3300478: Start_zastava_steber.001
     4300000: Tribuna_sedez.002
     4300002: Kaktus_01
     4300004: Kaktus_02
@@ -1252,6 +1257,7 @@ ModelImporter:
     4300472: Drevo_06.001
     4300474: Plane.008
     4300476: Plane.005
+    4300478: Start_zastava_steber.001
     10800000: Sun.003
     10800002: Lamp
   externalObjects:
@@ -1450,6 +1456,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material.043
     second: {fileID: 2100000, guid: 59aa499068be26b488cb349b6e43e4dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.045
+    second: {fileID: 2100000, guid: 3ce8269722bc3b3448f2690fdd745ca0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
