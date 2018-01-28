@@ -28,11 +28,9 @@ public class ControllerManager : MonoBehaviour {
                 InputDevice controller = InputManager.ActiveDevice;
 
                 if (controller == player1) {
-                    Debug.LogError("Player1 ready");
                     player1Ready = true;
                     Events.OnPlayerReady(true);
                 } else if (controller == player2) {
-                    Debug.LogError("Player2 ready");
                     player2Ready = true;
                     Events.OnPlayerReady(false);
                 }

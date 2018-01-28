@@ -2,7 +2,7 @@
 using InControl;
 
 public static class Events {
-    private static bool debugMessages = true;
+    private static bool debugMessages = false;
 
     public delegate void UiAction(bool isPlayer1);
     public static event UiAction playerJoined;
