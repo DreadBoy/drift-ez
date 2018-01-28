@@ -32,7 +32,8 @@ public class Controller : MonoBehaviour {
     public float GetThrottle() {
         if (inputDevice == null)
             return 0;
-        return Mathf.Max(inputDevice.GetControl(InputControlType.RightTrigger).Value, 0.0f);
+        return inputDevice.GetControl(InputControlType.RightBumper).IsPressed ? 1.0f : 0.0f;
+        //return Mathf.Max(inputDevice.GetControl(InputControlType.RightTrigger).Value, 0.0f);
     }
 
     public float GetBrake() {
