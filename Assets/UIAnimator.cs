@@ -10,6 +10,9 @@ public class UIAnimator : MonoBehaviour {
     [SerializeField]
     Animator Player2Animator;
 
+    [SerializeField]
+    Animator ControlsAnimator;
+
 
     void OnEnable() {
         Events.playerJoined += PlayerJoined;
@@ -29,5 +32,13 @@ public class UIAnimator : MonoBehaviour {
     private void PlayerLeft(bool isPlayer1) {
         Animator animator = isPlayer1 ? Player1Animator : Player2Animator;
         animator.SetBool("playerJoined", false);
+    }
+
+    public void OpenControls() {
+        ControlsAnimator.SetBool("open", true); ;
+    }
+
+    public void CloseControls() {
+        ControlsAnimator.SetBool("open", false);
     }
 }
