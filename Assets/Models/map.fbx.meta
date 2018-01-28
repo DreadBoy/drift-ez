@@ -36,6 +36,193 @@ ModelImporter:
     100056: Uta_osnova.006
     100058: Uta_streha.011
     100060: Zelezna_ograja_palica_01
+    100062: Camera
+    100064: Cube
+    100066: Lamp
+    100068: Tribuna_sedez.000
+    100070: Tribuna_sedez.001
+    100072: Tribuna_sedez.003
+    100074: Tribuna_sedez.004
+    100076: Tribuna_sedez.005
+    100078: Tribuna_sedez.006
+    100080: Tribuna_sedez.007
+    100082: Tribuna_sedez.008
+    100084: Tribuna_sedez.009
+    100086: Tribuna_sedez.010
+    100088: Tribuna_sedez.011
+    100090: Tribuna_sedez.012
+    100092: Tribuna_sedez.013
+    100094: Tribuna_sedez.014
+    100096: Tribuna_sedez.015
+    100098: Tribuna_sedez.016
+    100100: Tribuna_sedez.017
+    100102: Tribuna_sedez.018
+    100104: Tribuna_sedez.019
+    100106: Tribuna_sedez.020
+    100108: Tribuna_sedez.021
+    100110: Tribuna_sedez.022
+    100112: Tribuna_sedez.023
+    100114: Tribuna_sedez.024
+    100116: Tribuna_sedez.025
+    100118: Tribuna_sedez.026
+    100120: Tribuna_sedez.027
+    100122: Tribuna_sedez.028
+    100124: Tribuna_sedez.029
+    100126: Tribuna_sedez.030
+    100128: Tribuna_sedez.031
+    100130: Tribuna_sedez.032
+    100132: Tribuna_sedez.033
+    100134: Tribuna_sedez.034
+    100136: Tribuna_sedez.035
+    100138: Tribuna_sedez.036
+    100140: Tribuna_sedez.037
+    100142: Tribuna_sedez.038
+    100144: Tribuna_sedez.039
+    100146: Tribuna_sedez.040
+    100148: Tribuna_sedez.041
+    100150: Tribuna_sedez.042
+    100152: Tribuna_sedez.043
+    100154: Tribuna_sedez.044
+    100156: Tribuna_sedez.045
+    100158: Tribuna_sedez.046
+    100160: Tribuna_sprednji del.000
+    100162: Tribuna_sprednji del.001
+    100164: Tribuna_sprednji del.002
+    100166: Tribuna_sprednji del.003
+    100168: Tribuna_sprednji del.004
+    100170: Tribuna_sprednji del.005
+    100172: Tribuna_sprednji del.006
+    100174: Tribuna_sprednji del.007
+    100176: Tribuna_sprednji del.008
+    100178: Tribuna_sprednji del.009
+    100180: Tribuna_sprednji del.010
+    100182: Tribuna_sprednji del.011
+    100184: Tribuna_sprednji del.012
+    100186: Tribuna_sprednji del.013
+    100188: Tribuna_sprednji del.014
+    100190: Tribuna_sprednji del.015
+    100192: Tribuna_sprednji del.016
+    100194: Tribuna_sprednji del.017
+    100196: Tribuna_sprednji del.018
+    100198: Tribuna_sprednji del.019
+    100200: Tribuna_sprednji del.020
+    100202: Tribuna_sprednji del.021
+    100204: Tribuna_sprednji del.022
+    100206: Tribuna_sprednji del.023
+    100208: Tribuna_sprednji del.024
+    100210: Tribuna_sprednji del.025
+    100212: Tribuna_sprednji del.026
+    100214: Tribuna_sprednji del.027
+    100216: Tribuna_sprednji del.028
+    100218: Tribuna_sprednji del.029
+    100220: Tribuna_sprednji del.030
+    100222: Tribuna_sprednji del.031
+    100224: Tribuna_sprednji del.032
+    100226: Tribuna_sprednji del.033
+    100228: Tribuna_sprednji del.034
+    100230: Tribuna_sprednji del.035
+    100232: Tribuna_sprednji del.036
+    100234: Tribuna_sprednji del.037
+    100236: Tribuna_sprednji del.038
+    100238: Tribuna_sprednji del.039
+    100240: Tribuna_sprednji del.040
+    100242: Tribuna_sprednji del.041
+    100244: Tribuna_sprednji del.042
+    100246: Tribuna_sprednji del.043
+    100248: Tribuna_sprednji del.044
+    100250: Tribuna_sprednji del.045
+    100252: Tribuna_stena.000
+    100254: Tribuna_stena.001
+    100256: Tribuna_stena.002
+    100258: Tribuna_stena.003
+    100260: Tribuna_stena.004
+    100262: Tribuna_stena.005
+    100264: Tribuna_stena.006
+    100266: Tribuna_stena.007
+    100268: Tribuna_stena.008
+    100270: Tribuna_stena.009
+    100272: Tribuna_stena.010
+    100274: Tribuna_stena.011
+    100276: Tribuna_stena.012
+    100278: Tribuna_stena.013
+    100280: Tribuna_stena.014
+    100282: Tribuna_stena.015
+    100284: Tribuna_stena.016
+    100286: Tribuna_stena.017
+    100288: Tribuna_stena.018
+    100290: Tribuna_stena.019
+    100292: Tribuna_stena.020
+    100294: Tribuna_stena.021
+    100296: Tribuna_stena.022
+    100298: Tribuna_stena.023
+    100300: Tribuna_stena.024
+    100302: Tribuna_stena.025
+    100304: Tribuna_stena.026
+    100306: Tribuna_stena.027
+    100308: Tribuna_stena.028
+    100310: Tribuna_stena.029
+    100312: Tribuna_stena.030
+    100314: Tribuna_stena.031
+    100316: Tribuna_stena.032
+    100318: Tribuna_stena.033
+    100320: Tribuna_stena.034
+    100322: Tribuna_stena.035
+    100324: Tribuna_stena.036
+    100326: Tribuna_stena.037
+    100328: Tribuna_stena.038
+    100330: Tribuna_stena.039
+    100332: Tribuna_stena.040
+    100334: Tribuna_stena.041
+    100336: Tribuna_stena.042
+    100338: Tribuna_stena.043
+    100340: Tribuna_stena.044
+    100342: Tribuna_stena.045
+    100344: Tribuna_stranica.000
+    100346: Tribuna_stranica.001
+    100348: Tribuna_stranica.002
+    100350: Tribuna_stranica.003
+    100352: Tribuna_stranica.004
+    100354: Tribuna_stranica.005
+    100356: Tribuna_stranica.006
+    100358: Tribuna_stranica.007
+    100360: Tribuna_stranica.008
+    100362: Tribuna_stranica.009
+    100364: Tribuna_stranica.010
+    100366: Tribuna_stranica.011
+    100368: Tribuna_stranica.012
+    100370: Tribuna_stranica.013
+    100372: Tribuna_stranica.014
+    100374: Tribuna_stranica.015
+    100376: Tribuna_stranica.016
+    100378: Tribuna_stranica.017
+    100380: Tribuna_stranica.018
+    100382: Tribuna_stranica.019
+    100384: Tribuna_stranica.020
+    100386: Tribuna_stranica.021
+    100388: Tribuna_stranica.022
+    100390: Tribuna_stranica.023
+    100392: Tribuna_stranica.024
+    100394: Tribuna_stranica.025
+    100396: Tribuna_stranica.026
+    100398: Tribuna_stranica.027
+    100400: Tribuna_stranica.028
+    100402: Tribuna_stranica.029
+    100404: Tribuna_stranica.030
+    100406: Tribuna_stranica.031
+    100408: Tribuna_stranica.032
+    100410: Tribuna_stranica.033
+    100412: Tribuna_stranica.034
+    100414: Tribuna_stranica.035
+    100416: Tribuna_stranica.036
+    100418: Tribuna_stranica.037
+    100420: Tribuna_stranica.038
+    100422: Tribuna_stranica.039
+    100424: Tribuna_stranica.040
+    100426: Tribuna_stranica.041
+    100428: Tribuna_stranica.042
+    100430: Tribuna_stranica.043
+    100432: Tribuna_stranica.044
+    100434: Tribuna_stranica.045
     400000: Camera.001
     400002: Drevo_01 Krosnja 01
     400004: Drevo_02
@@ -67,7 +254,195 @@ ModelImporter:
     400056: Uta_osnova.006
     400058: Uta_streha.011
     400060: Zelezna_ograja_palica_01
+    400062: Camera
+    400064: Cube
+    400066: Lamp
+    400068: Tribuna_sedez.000
+    400070: Tribuna_sedez.001
+    400072: Tribuna_sedez.003
+    400074: Tribuna_sedez.004
+    400076: Tribuna_sedez.005
+    400078: Tribuna_sedez.006
+    400080: Tribuna_sedez.007
+    400082: Tribuna_sedez.008
+    400084: Tribuna_sedez.009
+    400086: Tribuna_sedez.010
+    400088: Tribuna_sedez.011
+    400090: Tribuna_sedez.012
+    400092: Tribuna_sedez.013
+    400094: Tribuna_sedez.014
+    400096: Tribuna_sedez.015
+    400098: Tribuna_sedez.016
+    400100: Tribuna_sedez.017
+    400102: Tribuna_sedez.018
+    400104: Tribuna_sedez.019
+    400106: Tribuna_sedez.020
+    400108: Tribuna_sedez.021
+    400110: Tribuna_sedez.022
+    400112: Tribuna_sedez.023
+    400114: Tribuna_sedez.024
+    400116: Tribuna_sedez.025
+    400118: Tribuna_sedez.026
+    400120: Tribuna_sedez.027
+    400122: Tribuna_sedez.028
+    400124: Tribuna_sedez.029
+    400126: Tribuna_sedez.030
+    400128: Tribuna_sedez.031
+    400130: Tribuna_sedez.032
+    400132: Tribuna_sedez.033
+    400134: Tribuna_sedez.034
+    400136: Tribuna_sedez.035
+    400138: Tribuna_sedez.036
+    400140: Tribuna_sedez.037
+    400142: Tribuna_sedez.038
+    400144: Tribuna_sedez.039
+    400146: Tribuna_sedez.040
+    400148: Tribuna_sedez.041
+    400150: Tribuna_sedez.042
+    400152: Tribuna_sedez.043
+    400154: Tribuna_sedez.044
+    400156: Tribuna_sedez.045
+    400158: Tribuna_sedez.046
+    400160: Tribuna_sprednji del.000
+    400162: Tribuna_sprednji del.001
+    400164: Tribuna_sprednji del.002
+    400166: Tribuna_sprednji del.003
+    400168: Tribuna_sprednji del.004
+    400170: Tribuna_sprednji del.005
+    400172: Tribuna_sprednji del.006
+    400174: Tribuna_sprednji del.007
+    400176: Tribuna_sprednji del.008
+    400178: Tribuna_sprednji del.009
+    400180: Tribuna_sprednji del.010
+    400182: Tribuna_sprednji del.011
+    400184: Tribuna_sprednji del.012
+    400186: Tribuna_sprednji del.013
+    400188: Tribuna_sprednji del.014
+    400190: Tribuna_sprednji del.015
+    400192: Tribuna_sprednji del.016
+    400194: Tribuna_sprednji del.017
+    400196: Tribuna_sprednji del.018
+    400198: Tribuna_sprednji del.019
+    400200: Tribuna_sprednji del.020
+    400202: Tribuna_sprednji del.021
+    400204: Tribuna_sprednji del.022
+    400206: Tribuna_sprednji del.023
+    400208: Tribuna_sprednji del.024
+    400210: Tribuna_sprednji del.025
+    400212: Tribuna_sprednji del.026
+    400214: Tribuna_sprednji del.027
+    400216: Tribuna_sprednji del.028
+    400218: Tribuna_sprednji del.029
+    400220: Tribuna_sprednji del.030
+    400222: Tribuna_sprednji del.031
+    400224: Tribuna_sprednji del.032
+    400226: Tribuna_sprednji del.033
+    400228: Tribuna_sprednji del.034
+    400230: Tribuna_sprednji del.035
+    400232: Tribuna_sprednji del.036
+    400234: Tribuna_sprednji del.037
+    400236: Tribuna_sprednji del.038
+    400238: Tribuna_sprednji del.039
+    400240: Tribuna_sprednji del.040
+    400242: Tribuna_sprednji del.041
+    400244: Tribuna_sprednji del.042
+    400246: Tribuna_sprednji del.043
+    400248: Tribuna_sprednji del.044
+    400250: Tribuna_sprednji del.045
+    400252: Tribuna_stena.000
+    400254: Tribuna_stena.001
+    400256: Tribuna_stena.002
+    400258: Tribuna_stena.003
+    400260: Tribuna_stena.004
+    400262: Tribuna_stena.005
+    400264: Tribuna_stena.006
+    400266: Tribuna_stena.007
+    400268: Tribuna_stena.008
+    400270: Tribuna_stena.009
+    400272: Tribuna_stena.010
+    400274: Tribuna_stena.011
+    400276: Tribuna_stena.012
+    400278: Tribuna_stena.013
+    400280: Tribuna_stena.014
+    400282: Tribuna_stena.015
+    400284: Tribuna_stena.016
+    400286: Tribuna_stena.017
+    400288: Tribuna_stena.018
+    400290: Tribuna_stena.019
+    400292: Tribuna_stena.020
+    400294: Tribuna_stena.021
+    400296: Tribuna_stena.022
+    400298: Tribuna_stena.023
+    400300: Tribuna_stena.024
+    400302: Tribuna_stena.025
+    400304: Tribuna_stena.026
+    400306: Tribuna_stena.027
+    400308: Tribuna_stena.028
+    400310: Tribuna_stena.029
+    400312: Tribuna_stena.030
+    400314: Tribuna_stena.031
+    400316: Tribuna_stena.032
+    400318: Tribuna_stena.033
+    400320: Tribuna_stena.034
+    400322: Tribuna_stena.035
+    400324: Tribuna_stena.036
+    400326: Tribuna_stena.037
+    400328: Tribuna_stena.038
+    400330: Tribuna_stena.039
+    400332: Tribuna_stena.040
+    400334: Tribuna_stena.041
+    400336: Tribuna_stena.042
+    400338: Tribuna_stena.043
+    400340: Tribuna_stena.044
+    400342: Tribuna_stena.045
+    400344: Tribuna_stranica.000
+    400346: Tribuna_stranica.001
+    400348: Tribuna_stranica.002
+    400350: Tribuna_stranica.003
+    400352: Tribuna_stranica.004
+    400354: Tribuna_stranica.005
+    400356: Tribuna_stranica.006
+    400358: Tribuna_stranica.007
+    400360: Tribuna_stranica.008
+    400362: Tribuna_stranica.009
+    400364: Tribuna_stranica.010
+    400366: Tribuna_stranica.011
+    400368: Tribuna_stranica.012
+    400370: Tribuna_stranica.013
+    400372: Tribuna_stranica.014
+    400374: Tribuna_stranica.015
+    400376: Tribuna_stranica.016
+    400378: Tribuna_stranica.017
+    400380: Tribuna_stranica.018
+    400382: Tribuna_stranica.019
+    400384: Tribuna_stranica.020
+    400386: Tribuna_stranica.021
+    400388: Tribuna_stranica.022
+    400390: Tribuna_stranica.023
+    400392: Tribuna_stranica.024
+    400394: Tribuna_stranica.025
+    400396: Tribuna_stranica.026
+    400398: Tribuna_stranica.027
+    400400: Tribuna_stranica.028
+    400402: Tribuna_stranica.029
+    400404: Tribuna_stranica.030
+    400406: Tribuna_stranica.031
+    400408: Tribuna_stranica.032
+    400410: Tribuna_stranica.033
+    400412: Tribuna_stranica.034
+    400414: Tribuna_stranica.035
+    400416: Tribuna_stranica.036
+    400418: Tribuna_stranica.037
+    400420: Tribuna_stranica.038
+    400422: Tribuna_stranica.039
+    400424: Tribuna_stranica.040
+    400426: Tribuna_stranica.041
+    400428: Tribuna_stranica.042
+    400430: Tribuna_stranica.043
+    400432: Tribuna_stranica.044
+    400434: Tribuna_stranica.045
     2000000: Camera.001
+    2000002: Camera
     2100000: No Name
     2100002: Material.004
     2100004: Material.005
@@ -89,6 +464,7 @@ ModelImporter:
     2100036: Material.008
     2100038: Material.024
     2100040: Material.025
+    2100042: Material
     2300000: Drevo_01 Krosnja 01
     2300002: Drevo_02
     2300004: Drevo_03 Krosnja 01
@@ -117,6 +493,191 @@ ModelImporter:
     2300050: Uta_osnova.006
     2300052: Uta_streha.011
     2300054: Zelezna_ograja_palica_01
+    2300056: Cube
+    2300058: Tribuna_sedez.000
+    2300060: Tribuna_sedez.001
+    2300062: Tribuna_sedez.003
+    2300064: Tribuna_sedez.004
+    2300066: Tribuna_sedez.005
+    2300068: Tribuna_sedez.006
+    2300070: Tribuna_sedez.007
+    2300072: Tribuna_sedez.008
+    2300074: Tribuna_sedez.009
+    2300076: Tribuna_sedez.010
+    2300078: Tribuna_sedez.011
+    2300080: Tribuna_sedez.012
+    2300082: Tribuna_sedez.013
+    2300084: Tribuna_sedez.014
+    2300086: Tribuna_sedez.015
+    2300088: Tribuna_sedez.016
+    2300090: Tribuna_sedez.017
+    2300092: Tribuna_sedez.018
+    2300094: Tribuna_sedez.019
+    2300096: Tribuna_sedez.020
+    2300098: Tribuna_sedez.021
+    2300100: Tribuna_sedez.022
+    2300102: Tribuna_sedez.023
+    2300104: Tribuna_sedez.024
+    2300106: Tribuna_sedez.025
+    2300108: Tribuna_sedez.026
+    2300110: Tribuna_sedez.027
+    2300112: Tribuna_sedez.028
+    2300114: Tribuna_sedez.029
+    2300116: Tribuna_sedez.030
+    2300118: Tribuna_sedez.031
+    2300120: Tribuna_sedez.032
+    2300122: Tribuna_sedez.033
+    2300124: Tribuna_sedez.034
+    2300126: Tribuna_sedez.035
+    2300128: Tribuna_sedez.036
+    2300130: Tribuna_sedez.037
+    2300132: Tribuna_sedez.038
+    2300134: Tribuna_sedez.039
+    2300136: Tribuna_sedez.040
+    2300138: Tribuna_sedez.041
+    2300140: Tribuna_sedez.042
+    2300142: Tribuna_sedez.043
+    2300144: Tribuna_sedez.044
+    2300146: Tribuna_sedez.045
+    2300148: Tribuna_sedez.046
+    2300150: Tribuna_sprednji del.000
+    2300152: Tribuna_sprednji del.001
+    2300154: Tribuna_sprednji del.002
+    2300156: Tribuna_sprednji del.003
+    2300158: Tribuna_sprednji del.004
+    2300160: Tribuna_sprednji del.005
+    2300162: Tribuna_sprednji del.006
+    2300164: Tribuna_sprednji del.007
+    2300166: Tribuna_sprednji del.008
+    2300168: Tribuna_sprednji del.009
+    2300170: Tribuna_sprednji del.010
+    2300172: Tribuna_sprednji del.011
+    2300174: Tribuna_sprednji del.012
+    2300176: Tribuna_sprednji del.013
+    2300178: Tribuna_sprednji del.014
+    2300180: Tribuna_sprednji del.015
+    2300182: Tribuna_sprednji del.016
+    2300184: Tribuna_sprednji del.017
+    2300186: Tribuna_sprednji del.018
+    2300188: Tribuna_sprednji del.019
+    2300190: Tribuna_sprednji del.020
+    2300192: Tribuna_sprednji del.021
+    2300194: Tribuna_sprednji del.022
+    2300196: Tribuna_sprednji del.023
+    2300198: Tribuna_sprednji del.024
+    2300200: Tribuna_sprednji del.025
+    2300202: Tribuna_sprednji del.026
+    2300204: Tribuna_sprednji del.027
+    2300206: Tribuna_sprednji del.028
+    2300208: Tribuna_sprednji del.029
+    2300210: Tribuna_sprednji del.030
+    2300212: Tribuna_sprednji del.031
+    2300214: Tribuna_sprednji del.032
+    2300216: Tribuna_sprednji del.033
+    2300218: Tribuna_sprednji del.034
+    2300220: Tribuna_sprednji del.035
+    2300222: Tribuna_sprednji del.036
+    2300224: Tribuna_sprednji del.037
+    2300226: Tribuna_sprednji del.038
+    2300228: Tribuna_sprednji del.039
+    2300230: Tribuna_sprednji del.040
+    2300232: Tribuna_sprednji del.041
+    2300234: Tribuna_sprednji del.042
+    2300236: Tribuna_sprednji del.043
+    2300238: Tribuna_sprednji del.044
+    2300240: Tribuna_sprednji del.045
+    2300242: Tribuna_stena.000
+    2300244: Tribuna_stena.001
+    2300246: Tribuna_stena.002
+    2300248: Tribuna_stena.003
+    2300250: Tribuna_stena.004
+    2300252: Tribuna_stena.005
+    2300254: Tribuna_stena.006
+    2300256: Tribuna_stena.007
+    2300258: Tribuna_stena.008
+    2300260: Tribuna_stena.009
+    2300262: Tribuna_stena.010
+    2300264: Tribuna_stena.011
+    2300266: Tribuna_stena.012
+    2300268: Tribuna_stena.013
+    2300270: Tribuna_stena.014
+    2300272: Tribuna_stena.015
+    2300274: Tribuna_stena.016
+    2300276: Tribuna_stena.017
+    2300278: Tribuna_stena.018
+    2300280: Tribuna_stena.019
+    2300282: Tribuna_stena.020
+    2300284: Tribuna_stena.021
+    2300286: Tribuna_stena.022
+    2300288: Tribuna_stena.023
+    2300290: Tribuna_stena.024
+    2300292: Tribuna_stena.025
+    2300294: Tribuna_stena.026
+    2300296: Tribuna_stena.027
+    2300298: Tribuna_stena.028
+    2300300: Tribuna_stena.029
+    2300302: Tribuna_stena.030
+    2300304: Tribuna_stena.031
+    2300306: Tribuna_stena.032
+    2300308: Tribuna_stena.033
+    2300310: Tribuna_stena.034
+    2300312: Tribuna_stena.035
+    2300314: Tribuna_stena.036
+    2300316: Tribuna_stena.037
+    2300318: Tribuna_stena.038
+    2300320: Tribuna_stena.039
+    2300322: Tribuna_stena.040
+    2300324: Tribuna_stena.041
+    2300326: Tribuna_stena.042
+    2300328: Tribuna_stena.043
+    2300330: Tribuna_stena.044
+    2300332: Tribuna_stena.045
+    2300334: Tribuna_stranica.000
+    2300336: Tribuna_stranica.001
+    2300338: Tribuna_stranica.002
+    2300340: Tribuna_stranica.003
+    2300342: Tribuna_stranica.004
+    2300344: Tribuna_stranica.005
+    2300346: Tribuna_stranica.006
+    2300348: Tribuna_stranica.007
+    2300350: Tribuna_stranica.008
+    2300352: Tribuna_stranica.009
+    2300354: Tribuna_stranica.010
+    2300356: Tribuna_stranica.011
+    2300358: Tribuna_stranica.012
+    2300360: Tribuna_stranica.013
+    2300362: Tribuna_stranica.014
+    2300364: Tribuna_stranica.015
+    2300366: Tribuna_stranica.016
+    2300368: Tribuna_stranica.017
+    2300370: Tribuna_stranica.018
+    2300372: Tribuna_stranica.019
+    2300374: Tribuna_stranica.020
+    2300376: Tribuna_stranica.021
+    2300378: Tribuna_stranica.022
+    2300380: Tribuna_stranica.023
+    2300382: Tribuna_stranica.024
+    2300384: Tribuna_stranica.025
+    2300386: Tribuna_stranica.026
+    2300388: Tribuna_stranica.027
+    2300390: Tribuna_stranica.028
+    2300392: Tribuna_stranica.029
+    2300394: Tribuna_stranica.030
+    2300396: Tribuna_stranica.031
+    2300398: Tribuna_stranica.032
+    2300400: Tribuna_stranica.033
+    2300402: Tribuna_stranica.034
+    2300404: Tribuna_stranica.035
+    2300406: Tribuna_stranica.036
+    2300408: Tribuna_stranica.037
+    2300410: Tribuna_stranica.038
+    2300412: Tribuna_stranica.039
+    2300414: Tribuna_stranica.040
+    2300416: Tribuna_stranica.041
+    2300418: Tribuna_stranica.042
+    2300420: Tribuna_stranica.043
+    2300422: Tribuna_stranica.044
+    2300424: Tribuna_stranica.045
     3300000: Drevo_01 Krosnja 01
     3300002: Drevo_02
     3300004: Drevo_03 Krosnja 01
@@ -145,6 +706,191 @@ ModelImporter:
     3300050: Uta_osnova.006
     3300052: Uta_streha.011
     3300054: Zelezna_ograja_palica_01
+    3300056: Cube
+    3300058: Tribuna_sedez.000
+    3300060: Tribuna_sedez.001
+    3300062: Tribuna_sedez.003
+    3300064: Tribuna_sedez.004
+    3300066: Tribuna_sedez.005
+    3300068: Tribuna_sedez.006
+    3300070: Tribuna_sedez.007
+    3300072: Tribuna_sedez.008
+    3300074: Tribuna_sedez.009
+    3300076: Tribuna_sedez.010
+    3300078: Tribuna_sedez.011
+    3300080: Tribuna_sedez.012
+    3300082: Tribuna_sedez.013
+    3300084: Tribuna_sedez.014
+    3300086: Tribuna_sedez.015
+    3300088: Tribuna_sedez.016
+    3300090: Tribuna_sedez.017
+    3300092: Tribuna_sedez.018
+    3300094: Tribuna_sedez.019
+    3300096: Tribuna_sedez.020
+    3300098: Tribuna_sedez.021
+    3300100: Tribuna_sedez.022
+    3300102: Tribuna_sedez.023
+    3300104: Tribuna_sedez.024
+    3300106: Tribuna_sedez.025
+    3300108: Tribuna_sedez.026
+    3300110: Tribuna_sedez.027
+    3300112: Tribuna_sedez.028
+    3300114: Tribuna_sedez.029
+    3300116: Tribuna_sedez.030
+    3300118: Tribuna_sedez.031
+    3300120: Tribuna_sedez.032
+    3300122: Tribuna_sedez.033
+    3300124: Tribuna_sedez.034
+    3300126: Tribuna_sedez.035
+    3300128: Tribuna_sedez.036
+    3300130: Tribuna_sedez.037
+    3300132: Tribuna_sedez.038
+    3300134: Tribuna_sedez.039
+    3300136: Tribuna_sedez.040
+    3300138: Tribuna_sedez.041
+    3300140: Tribuna_sedez.042
+    3300142: Tribuna_sedez.043
+    3300144: Tribuna_sedez.044
+    3300146: Tribuna_sedez.045
+    3300148: Tribuna_sedez.046
+    3300150: Tribuna_sprednji del.000
+    3300152: Tribuna_sprednji del.001
+    3300154: Tribuna_sprednji del.002
+    3300156: Tribuna_sprednji del.003
+    3300158: Tribuna_sprednji del.004
+    3300160: Tribuna_sprednji del.005
+    3300162: Tribuna_sprednji del.006
+    3300164: Tribuna_sprednji del.007
+    3300166: Tribuna_sprednji del.008
+    3300168: Tribuna_sprednji del.009
+    3300170: Tribuna_sprednji del.010
+    3300172: Tribuna_sprednji del.011
+    3300174: Tribuna_sprednji del.012
+    3300176: Tribuna_sprednji del.013
+    3300178: Tribuna_sprednji del.014
+    3300180: Tribuna_sprednji del.015
+    3300182: Tribuna_sprednji del.016
+    3300184: Tribuna_sprednji del.017
+    3300186: Tribuna_sprednji del.018
+    3300188: Tribuna_sprednji del.019
+    3300190: Tribuna_sprednji del.020
+    3300192: Tribuna_sprednji del.021
+    3300194: Tribuna_sprednji del.022
+    3300196: Tribuna_sprednji del.023
+    3300198: Tribuna_sprednji del.024
+    3300200: Tribuna_sprednji del.025
+    3300202: Tribuna_sprednji del.026
+    3300204: Tribuna_sprednji del.027
+    3300206: Tribuna_sprednji del.028
+    3300208: Tribuna_sprednji del.029
+    3300210: Tribuna_sprednji del.030
+    3300212: Tribuna_sprednji del.031
+    3300214: Tribuna_sprednji del.032
+    3300216: Tribuna_sprednji del.033
+    3300218: Tribuna_sprednji del.034
+    3300220: Tribuna_sprednji del.035
+    3300222: Tribuna_sprednji del.036
+    3300224: Tribuna_sprednji del.037
+    3300226: Tribuna_sprednji del.038
+    3300228: Tribuna_sprednji del.039
+    3300230: Tribuna_sprednji del.040
+    3300232: Tribuna_sprednji del.041
+    3300234: Tribuna_sprednji del.042
+    3300236: Tribuna_sprednji del.043
+    3300238: Tribuna_sprednji del.044
+    3300240: Tribuna_sprednji del.045
+    3300242: Tribuna_stena.000
+    3300244: Tribuna_stena.001
+    3300246: Tribuna_stena.002
+    3300248: Tribuna_stena.003
+    3300250: Tribuna_stena.004
+    3300252: Tribuna_stena.005
+    3300254: Tribuna_stena.006
+    3300256: Tribuna_stena.007
+    3300258: Tribuna_stena.008
+    3300260: Tribuna_stena.009
+    3300262: Tribuna_stena.010
+    3300264: Tribuna_stena.011
+    3300266: Tribuna_stena.012
+    3300268: Tribuna_stena.013
+    3300270: Tribuna_stena.014
+    3300272: Tribuna_stena.015
+    3300274: Tribuna_stena.016
+    3300276: Tribuna_stena.017
+    3300278: Tribuna_stena.018
+    3300280: Tribuna_stena.019
+    3300282: Tribuna_stena.020
+    3300284: Tribuna_stena.021
+    3300286: Tribuna_stena.022
+    3300288: Tribuna_stena.023
+    3300290: Tribuna_stena.024
+    3300292: Tribuna_stena.025
+    3300294: Tribuna_stena.026
+    3300296: Tribuna_stena.027
+    3300298: Tribuna_stena.028
+    3300300: Tribuna_stena.029
+    3300302: Tribuna_stena.030
+    3300304: Tribuna_stena.031
+    3300306: Tribuna_stena.032
+    3300308: Tribuna_stena.033
+    3300310: Tribuna_stena.034
+    3300312: Tribuna_stena.035
+    3300314: Tribuna_stena.036
+    3300316: Tribuna_stena.037
+    3300318: Tribuna_stena.038
+    3300320: Tribuna_stena.039
+    3300322: Tribuna_stena.040
+    3300324: Tribuna_stena.041
+    3300326: Tribuna_stena.042
+    3300328: Tribuna_stena.043
+    3300330: Tribuna_stena.044
+    3300332: Tribuna_stena.045
+    3300334: Tribuna_stranica.000
+    3300336: Tribuna_stranica.001
+    3300338: Tribuna_stranica.002
+    3300340: Tribuna_stranica.003
+    3300342: Tribuna_stranica.004
+    3300344: Tribuna_stranica.005
+    3300346: Tribuna_stranica.006
+    3300348: Tribuna_stranica.007
+    3300350: Tribuna_stranica.008
+    3300352: Tribuna_stranica.009
+    3300354: Tribuna_stranica.010
+    3300356: Tribuna_stranica.011
+    3300358: Tribuna_stranica.012
+    3300360: Tribuna_stranica.013
+    3300362: Tribuna_stranica.014
+    3300364: Tribuna_stranica.015
+    3300366: Tribuna_stranica.016
+    3300368: Tribuna_stranica.017
+    3300370: Tribuna_stranica.018
+    3300372: Tribuna_stranica.019
+    3300374: Tribuna_stranica.020
+    3300376: Tribuna_stranica.021
+    3300378: Tribuna_stranica.022
+    3300380: Tribuna_stranica.023
+    3300382: Tribuna_stranica.024
+    3300384: Tribuna_stranica.025
+    3300386: Tribuna_stranica.026
+    3300388: Tribuna_stranica.027
+    3300390: Tribuna_stranica.028
+    3300392: Tribuna_stranica.029
+    3300394: Tribuna_stranica.030
+    3300396: Tribuna_stranica.031
+    3300398: Tribuna_stranica.032
+    3300400: Tribuna_stranica.033
+    3300402: Tribuna_stranica.034
+    3300404: Tribuna_stranica.035
+    3300406: Tribuna_stranica.036
+    3300408: Tribuna_stranica.037
+    3300410: Tribuna_stranica.038
+    3300412: Tribuna_stranica.039
+    3300414: Tribuna_stranica.040
+    3300416: Tribuna_stranica.041
+    3300418: Tribuna_stranica.042
+    3300420: Tribuna_stranica.043
+    3300422: Tribuna_stranica.044
+    3300424: Tribuna_stranica.045
     4300000: Tribuna_sedez.002
     4300002: Kaktus_01
     4300004: Kaktus_02
@@ -173,8 +919,199 @@ ModelImporter:
     4300050: Sod_lesen
     4300052: Sod_plasticen
     4300054: palma_list.001
+    4300056: Tribuna_stranica.002
+    4300058: Tribuna_stena.002
+    4300060: Tribuna_sprednji del.002
+    4300062: Tribuna_sedez.000
+    4300064: Cube
+    4300066: Tribuna_sedez.001
+    4300068: Tribuna_sprednji del.000
+    4300070: Tribuna_stena.000
+    4300072: Tribuna_stranica.000
+    4300074: Tribuna_sedez.003
+    4300076: Tribuna_sprednji del.001
+    4300078: Tribuna_stena.001
+    4300080: Tribuna_stranica.001
+    4300082: Tribuna_sedez.004
+    4300084: Tribuna_sprednji del.003
+    4300086: Tribuna_stena.003
+    4300088: Tribuna_stranica.003
+    4300090: Tribuna_sedez.005
+    4300092: Tribuna_sprednji del.004
+    4300094: Tribuna_stena.004
+    4300096: Tribuna_stranica.004
+    4300098: Tribuna_sedez.006
+    4300100: Tribuna_sprednji del.005
+    4300102: Tribuna_stena.005
+    4300104: Tribuna_stranica.005
+    4300106: Tribuna_sedez.007
+    4300108: Tribuna_sprednji del.006
+    4300110: Tribuna_stena.006
+    4300112: Tribuna_stranica.006
+    4300114: Tribuna_sedez.008
+    4300116: Tribuna_sprednji del.007
+    4300118: Tribuna_stena.007
+    4300120: Tribuna_stranica.007
+    4300122: Tribuna_sedez.009
+    4300124: Tribuna_sprednji del.008
+    4300126: Tribuna_stena.008
+    4300128: Tribuna_stranica.008
+    4300130: Tribuna_sedez.010
+    4300132: Tribuna_sprednji del.009
+    4300134: Tribuna_stena.009
+    4300136: Tribuna_stranica.009
+    4300138: Tribuna_sedez.011
+    4300140: Tribuna_sprednji del.010
+    4300142: Tribuna_stena.010
+    4300144: Tribuna_stranica.010
+    4300146: Tribuna_sedez.012
+    4300148: Tribuna_sprednji del.011
+    4300150: Tribuna_stena.011
+    4300152: Tribuna_stranica.011
+    4300154: Tribuna_sedez.013
+    4300156: Tribuna_sprednji del.012
+    4300158: Tribuna_stena.012
+    4300160: Tribuna_stranica.012
+    4300162: Tribuna_sedez.014
+    4300164: Tribuna_sprednji del.013
+    4300166: Tribuna_stena.013
+    4300168: Tribuna_stranica.013
+    4300170: Tribuna_sedez.015
+    4300172: Tribuna_sedez.016
+    4300174: Tribuna_sedez.017
+    4300176: Tribuna_sedez.018
+    4300178: Tribuna_sedez.019
+    4300180: Tribuna_sedez.020
+    4300182: Tribuna_sedez.021
+    4300184: Tribuna_sedez.022
+    4300186: Tribuna_sedez.023
+    4300188: Tribuna_sedez.024
+    4300190: Tribuna_sedez.025
+    4300192: Tribuna_sedez.026
+    4300194: Tribuna_sprednji del.014
+    4300196: Tribuna_sprednji del.015
+    4300198: Tribuna_sprednji del.016
+    4300200: Tribuna_sprednji del.017
+    4300202: Tribuna_sprednji del.018
+    4300204: Tribuna_sprednji del.019
+    4300206: Tribuna_sprednji del.020
+    4300208: Tribuna_sprednji del.021
+    4300210: Tribuna_sprednji del.022
+    4300212: Tribuna_sprednji del.023
+    4300214: Tribuna_sprednji del.024
+    4300216: Tribuna_sprednji del.025
+    4300218: Tribuna_stena.014
+    4300220: Tribuna_stena.015
+    4300222: Tribuna_stena.016
+    4300224: Tribuna_stena.017
+    4300226: Tribuna_stena.018
+    4300228: Tribuna_stena.019
+    4300230: Tribuna_stena.020
+    4300232: Tribuna_stena.021
+    4300234: Tribuna_stena.022
+    4300236: Tribuna_stena.023
+    4300238: Tribuna_stena.024
+    4300240: Tribuna_stena.025
+    4300242: Tribuna_stranica.014
+    4300244: Tribuna_stranica.015
+    4300246: Tribuna_stranica.016
+    4300248: Tribuna_stranica.017
+    4300250: Tribuna_stranica.018
+    4300252: Tribuna_stranica.019
+    4300254: Tribuna_stranica.020
+    4300256: Tribuna_stranica.021
+    4300258: Tribuna_stranica.022
+    4300260: Tribuna_stranica.023
+    4300262: Tribuna_stranica.024
+    4300264: Tribuna_stranica.025
+    4300266: Tribuna_sedez.027
+    4300268: Tribuna_sprednji del.026
+    4300270: Tribuna_stena.026
+    4300272: Tribuna_stranica.026
+    4300274: Tribuna_sedez.028
+    4300276: Tribuna_sprednji del.027
+    4300278: Tribuna_stena.027
+    4300280: Tribuna_stranica.027
+    4300282: Tribuna_sedez.029
+    4300284: Tribuna_sedez.030
+    4300286: Tribuna_sprednji del.028
+    4300288: Tribuna_sprednji del.029
+    4300290: Tribuna_stena.028
+    4300292: Tribuna_stena.029
+    4300294: Tribuna_stranica.028
+    4300296: Tribuna_stranica.029
+    4300298: Tribuna_sedez.031
+    4300300: Tribuna_sprednji del.030
+    4300302: Tribuna_stena.030
+    4300304: Tribuna_stranica.030
+    4300306: Tribuna_sedez.032
+    4300308: Tribuna_sprednji del.031
+    4300310: Tribuna_stena.031
+    4300312: Tribuna_stranica.031
+    4300314: Tribuna_sedez.033
+    4300316: Tribuna_sprednji del.032
+    4300318: Tribuna_stena.032
+    4300320: Tribuna_stranica.032
+    4300322: Tribuna_sedez.034
+    4300324: Tribuna_sprednji del.033
+    4300326: Tribuna_stena.033
+    4300328: Tribuna_stranica.033
+    4300330: Tribuna_sedez.035
+    4300332: Tribuna_sprednji del.034
+    4300334: Tribuna_stena.034
+    4300336: Tribuna_stranica.034
+    4300338: Tribuna_sedez.036
+    4300340: Tribuna_sprednji del.035
+    4300342: Tribuna_stena.035
+    4300344: Tribuna_stranica.035
+    4300346: Tribuna_sedez.037
+    4300348: Tribuna_sprednji del.036
+    4300350: Tribuna_stena.036
+    4300352: Tribuna_stranica.036
+    4300354: Tribuna_sedez.038
+    4300356: Tribuna_sprednji del.037
+    4300358: Tribuna_stena.037
+    4300360: Tribuna_stranica.037
+    4300362: Tribuna_sedez.039
+    4300364: Tribuna_sprednji del.038
+    4300366: Tribuna_stena.038
+    4300368: Tribuna_stranica.038
+    4300370: Tribuna_sedez.040
+    4300372: Tribuna_sprednji del.039
+    4300374: Tribuna_stena.039
+    4300376: Tribuna_stranica.039
+    4300378: Tribuna_sedez.041
+    4300380: Tribuna_sprednji del.040
+    4300382: Tribuna_stena.040
+    4300384: Tribuna_stranica.040
+    4300386: Tribuna_sedez.042
+    4300388: Tribuna_sprednji del.041
+    4300390: Tribuna_stena.041
+    4300392: Tribuna_stranica.041
+    4300394: Tribuna_sedez.043
+    4300396: Tribuna_sprednji del.042
+    4300398: Tribuna_stena.042
+    4300400: Tribuna_stranica.042
+    4300402: Tribuna_sedez.044
+    4300404: Tribuna_sedez.045
+    4300406: Tribuna_sedez.046
+    4300408: Tribuna_sprednji del.043
+    4300410: Tribuna_sprednji del.044
+    4300412: Tribuna_sprednji del.045
+    4300414: Tribuna_stena.043
+    4300416: Tribuna_stena.044
+    4300418: Tribuna_stena.045
+    4300420: Tribuna_stranica.043
+    4300422: Tribuna_stranica.044
+    4300424: Tribuna_stranica.045
     10800000: Sun.003
+    10800002: Lamp
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: e9018bb5a49ade6418d6eeea44281836, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

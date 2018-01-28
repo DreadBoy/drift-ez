@@ -6,13 +6,12 @@ public class ShaderEffect_BleedingColors : MonoBehaviour
 
     public float intensity = 3;
     public float shift = 0.5f;
-    public Shader shader;
     private Material material;
 
     // Creates a private material used to the effect
     void Awake()
     {
-        material = new Material(shader);
+        material = new Material(Shader.Find("Hidden/BleedingColors"));
     }
 
     // Postprocess the image
