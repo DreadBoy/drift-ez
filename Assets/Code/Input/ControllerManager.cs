@@ -57,7 +57,7 @@ public class ControllerManager : MonoBehaviour {
                 } else if (controller == player2 && !player2Ready) {
                     player2 = null;
                     player2Ready = false;
-                    Events.OnPlayerLeft(false); ;
+                    Events.OnPlayerLeft(false);
                 }
 
             }
@@ -87,7 +87,7 @@ public class ControllerManager : MonoBehaviour {
     }
 
     public InputDevice GetPlayer1InputDevice() {
-        return player1; ;
+        return player1;
     }
 
     public InputDevice GetPlayer2InputDevice() {
