@@ -276,7 +276,7 @@ MonoBehaviour:
         e_CurveG: 0
         e_CurveB: 0
   userLut:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       lut: {fileID: 0}
       contribution: 1
@@ -296,10 +296,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 0.98275864, g: 0.20530817, b: 0.08671402, a: 1}
+      color: {r: 0.75, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
       intensity: 0
-      smoothness: 1
+      smoothness: 0.658
       roundness: 0
       mask: {fileID: 0}
       opacity: 1

@@ -61,8 +61,6 @@ public class ControllerManager : MonoBehaviour {
                 }
 
             }
-
-            Debug.Log("Player 1: " + (player1 == null ? "null" : player1.Name) + " Player2: " + (player2 == null ? "null" : player2.Name));
         }
     }
 

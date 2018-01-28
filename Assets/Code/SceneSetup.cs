@@ -26,10 +26,7 @@ public class SceneSetup : MonoBehaviour {
             playerCount = 1;
         }
 
-        Debug.LogError("Player count: " + playerCount);
-
         for (int i = 0; i < playerCount; i++) {
-            Debug.LogError("Creating car " + i); ;
             Car car = Instantiate(carPrefab);
             car.transform.position = placeholders[i].transform.position;
             car.transform.rotation = placeholders[i].transform.rotation;

@@ -43,12 +43,10 @@ public class MaskedSlider : MonoBehaviour
     public void SetColor(Color color)
     {
         image.color = color;
-        Debug.Log(color);
     }
 
     public void ResetColor()
     {
         image.color = defaultColor;
-        Debug.Log("RESET");
     }
 }

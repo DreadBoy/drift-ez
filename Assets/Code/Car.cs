@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Controller))]
 [RequireComponent(typeof(AudioSource))]
@@ -98,10 +97,5 @@ public class Car : MonoBehaviour
             audioSource.Play();
         }
         audioSource.pitch = 1f + 0.4f * controller.GetThrottle();
-    }
-
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(0, 0, 300, 30), "acceleration " + acceleration);
     }
 }

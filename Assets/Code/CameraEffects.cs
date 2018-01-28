@@ -12,20 +12,26 @@ public class CameraEffects : MonoBehaviour
     ShaderEffect_BleedingColors bleedingColors;
     [SerializeField]
     Car car;
+    public PostProcessingProfile profile;
 
     void Awake()
     {
         camera = GetComponent<Camera>();
         postProcessingBehaviour = GetComponent<PostProcessingBehaviour>();
         bleedingColors = GetComponent<ShaderEffect_BleedingColors>();
+        postProcessingBehaviour.profile = Instantiate(profile);
+    }
+
+    private void Start()
+    {
     }
 
     void Update()
     {
-        if (car.isDrifting)
-            bleedingColors.shift = -car.controller.GetSteering();
-        else
-            bleedingColors.shift = 0;
+        //if (car.isDrifting)
+        //    bleedingColors.shift = -car.controller.GetSteering();
+        //else
+        //    bleedingColors.shift = 0;
 
         camera.fieldOfView = 60 - car.speed / 5;
 
